@@ -1,0 +1,11 @@
+ENTITY portas IS 
+PORT(a, b, c : IN BIT;
+x, y: OUT BIT):
+END portas;
+
+ARCHITECTURE one OF portas IS
+BEGIN
+X <= a AND b;
+Y <= b OR c;
+END one;
+

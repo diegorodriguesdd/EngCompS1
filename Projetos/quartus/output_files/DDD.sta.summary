@@ -1,0 +1,185 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'CLK'
+Slack : -4.109
+TNS   : -41.395
+
+Type  : Slow 1200mV 85C Model Setup 'DIV_CLK:CHIP1|X'
+Slack : -0.349
+TNS   : -0.981
+
+Type  : Slow 1200mV 85C Model Setup 'COUNT_5:CHIP4|X'
+Slack : -0.271
+TNS   : -0.781
+
+Type  : Slow 1200mV 85C Model Setup 'COUNT_9:CHIP6|X'
+Slack : -0.159
+TNS   : -0.301
+
+Type  : Slow 1200mV 85C Model Setup 'COUNT_9:CHIP2|X'
+Slack : -0.156
+TNS   : -0.428
+
+Type  : Slow 1200mV 85C Model Hold 'COUNT_5:CHIP4|X'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'COUNT_9:CHIP2|X'
+Slack : 0.347
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'COUNT_9:CHIP6|X'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'DIV_CLK:CHIP1|X'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.631
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -36.672
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'COUNT_5:CHIP4|X'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DIV_CLK:CHIP1|X'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'COUNT_9:CHIP2|X'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'COUNT_9:CHIP6|X'
+Slack : -1.403
+TNS   : -4.209
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -3.765
+TNS   : -35.528
+
+Type  : Slow 1200mV 0C Model Setup 'DIV_CLK:CHIP1|X'
+Slack : -0.223
+TNS   : -0.527
+
+Type  : Slow 1200mV 0C Model Setup 'COUNT_5:CHIP4|X'
+Slack : -0.147
+TNS   : -0.357
+
+Type  : Slow 1200mV 0C Model Setup 'COUNT_9:CHIP2|X'
+Slack : -0.056
+TNS   : -0.121
+
+Type  : Slow 1200mV 0C Model Setup 'COUNT_9:CHIP6|X'
+Slack : -0.053
+TNS   : -0.099
+
+Type  : Slow 1200mV 0C Model Hold 'COUNT_5:CHIP4|X'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'COUNT_9:CHIP2|X'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'COUNT_9:CHIP6|X'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'DIV_CLK:CHIP1|X'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLK'
+Slack : 0.584
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -36.672
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'COUNT_5:CHIP4|X'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DIV_CLK:CHIP1|X'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'COUNT_9:CHIP2|X'
+Slack : -1.403
+TNS   : -5.612
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'COUNT_9:CHIP6|X'
+Slack : -1.403
+TNS   : -4.209
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -1.284
+TNS   : -4.645
+
+Type  : Fast 1200mV 0C Model Setup 'DIV_CLK:CHIP1|X'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'COUNT_5:CHIP4|X'
+Slack : 0.441
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'COUNT_9:CHIP6|X'
+Slack : 0.495
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'COUNT_9:CHIP2|X'
+Slack : 0.504
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'COUNT_5:CHIP4|X'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'COUNT_9:CHIP2|X'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'COUNT_9:CHIP6|X'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'DIV_CLK:CHIP1|X'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLK'
+Slack : 0.244
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : -3.000
+TNS   : -27.814
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'COUNT_5:CHIP4|X'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DIV_CLK:CHIP1|X'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'COUNT_9:CHIP2|X'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'COUNT_9:CHIP6|X'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------
