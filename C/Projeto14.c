@@ -40,16 +40,16 @@ void enumTest(){
 
 // Revisao
 
-void addOne(int *n){
-	printf("Dentro da funcao: x = %p\n", n);
+void addOne(int *n){ // *n esta recebendo o endereco do q e passado como parametro da funcao;
+	printf("Dentro da funcao: x = %d\n", *n);
 	*n = *n + 1;
 }
 
 void useAddOne(){
 	int x = 5;
-	printf("Antes de funcao: x = %d\n", x);
-	addOne(&x);
-	printf("Antes de funcao: x = %d\n", x);
+	printf("Antes da funcao: x = %d\n", x);
+	addOne(&x); // Passando o endereco de x para a funcao assim o x declarado em useAddOne() sera modificado em addOne();
+	printf("Depois da funcao: x = %d\n", x);
 }
 
 int main(void){
