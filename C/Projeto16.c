@@ -3,30 +3,65 @@
 #include <stdlib.h>
 #include <string.h>
 
-void brinks(){
+// Ponteiros Kappa
+
+void pont1(){
 	int count = 10;
 	int *p;
 	p = &count;
-	
-	printf("%d\n", count);
-	printf("%p\n", &count);
-	
-	printf("%p\n", &p);
-	
-	printf("%p\n", p);
-	printf("%d\n", *p);
+	printf("*p = %d\n", *p);
+	*p = 12;
+	printf("*p = %d\n", *p);
+	printf("count = %d\n", count);
 }
 
-int main(int argc, char **argv){
+void pont2(){
+	int *p, *p1, x = 10;
+	float y = 20.0;
+	p = &x;
+	printf("*p = %d\n", *p);
+	p1 = p;
+	printf("*p1 = %d\n", *p1);
+	p = &y;
+	printf("*p = %d\n", *p);
+	printf("*p = %f\n", *((float*) p));
+}
+
+void pont3(){
+	int *p = 0x5DC;
+	printf("hex = %p Dec = %d\n", p, p);
+	p++;
+	printf("hex = %p Dec = %d\n", p, p);
+	p += 15;
+	printf("hex = %p Dec = %d\n", p, p);
+	p -= 2;
+	printf("hex = %p Dec = %d\n", p, p);
+}
+
+void pont4(){
+	int *p, x = 10;
+	p = &x;
+	printf("*p = %d\n", *p);
+	*p = *p + 1;
+	(*p)++;
+	printf("*p = %d\n", *p);
+	*p *= 10;
+	printf("*p = %d\n", *p);
+}
+
+int main(void){
 	
-	/*int var;
-	printf("argc = %d\n", argc);
-	for(var = 0; var < argc; var++){
-		printf("argv [%d] = %s\n", var, argv[var]);
-	}
-	*/
+	// Begin
+	setlocale(LC_ALL,"Portuguese");
+
+	// Content	
+	//pont1();
+	//pont2();
+	//pont3();
+	pont4();
 	
-	brinks();
+	// End
+	system("pause");
 	
-	return 0;
+	//return 0;
 }
