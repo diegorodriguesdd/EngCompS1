@@ -1,5 +1,9 @@
 TimeQuest Timing Analyzer report for DDD
+<<<<<<< HEAD
 Fri Dec 05 14:26:06 2025
+=======
+Fri Dec 19 15:48:19 2025
+>>>>>>> 8be6b77 (VHDL Relogio)
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -38,6 +42,7 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
  30. Signal Integrity Metrics (Fast 1200mv 0c Model)
  31. Setup Transfers
  32. Hold Transfers
+<<<<<<< HEAD
  33. Report TCCS
  34. Report RSKM
  35. Unconstrained Paths Summary
@@ -45,6 +50,17 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
  37. Unconstrained Output Ports
  38. Unconstrained Output Ports
  39. TimeQuest Timing Analyzer Messages
+=======
+ 33. Recovery Transfers
+ 34. Removal Transfers
+ 35. Report TCCS
+ 36. Report RSKM
+ 37. Unconstrained Paths Summary
+ 38. Clock Status Summary
+ 39. Unconstrained Output Ports
+ 40. Unconstrained Output Ports
+ 41. TimeQuest Timing Analyzer Messages
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 
 
@@ -90,11 +106,16 @@ agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
+<<<<<<< HEAD
 ; Average used               ; 1.02        ;
+=======
+; Average used               ; 1.03        ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+<<<<<<< HEAD
 ;     Processor 2            ;   1.5%      ;
 +----------------------------+-------------+
 
@@ -162,10 +183,96 @@ No paths to report.
 ; Slow 1200mV 85C Model Removal Summary ;
 -----------------------------------------
 No paths to report.
+=======
+;     Processor 2            ;   2.7%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                             ;
++------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------+
+; Clock Name       ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets              ;
++------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------+
+; CLK              ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLK }              ;
+; COUNT_5:CHIP4|X  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { COUNT_5:CHIP4|X }  ;
+; COUNT_5:CHIP8|X  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { COUNT_5:CHIP8|X }  ;
+; COUNT_9:CHIP2|X  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { COUNT_9:CHIP2|X }  ;
+; COUNT_9:CHIP6|X  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { COUNT_9:CHIP6|X }  ;
+; COUNT_9:CHIP10|X ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { COUNT_9:CHIP10|X } ;
+; DIV_CLK:CHIP1|X  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { DIV_CLK:CHIP1|X }  ;
++------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                               ;
++------------+-----------------+------------------+------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name       ; Note                                           ;
++------------+-----------------+------------------+------------------------------------------------+
+; 192.75 MHz ; 192.75 MHz      ; CLK              ;                                                ;
+; 693.48 MHz ; 416.15 MHz      ; COUNT_9:CHIP10|X ; limit due to minimum period restriction (tmin) ;
+; 740.74 MHz ; 416.15 MHz      ; COUNT_5:CHIP8|X  ; limit due to minimum period restriction (tmin) ;
+; 785.55 MHz ; 416.15 MHz      ; DIV_CLK:CHIP1|X  ; limit due to minimum period restriction (tmin) ;
+; 848.9 MHz  ; 416.15 MHz      ; COUNT_5:CHIP4|X  ; limit due to minimum period restriction (tmin) ;
+; 852.51 MHz ; 416.15 MHz      ; COUNT_9:CHIP2|X  ; limit due to minimum period restriction (tmin) ;
+; 856.16 MHz ; 416.15 MHz      ; COUNT_9:CHIP6|X  ; limit due to minimum period restriction (tmin) ;
++------------+-----------------+------------------+------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-------------------------------------------+
+; Slow 1200mV 85C Model Setup Summary       ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; CLK              ; -4.188 ; -40.517       ;
+; COUNT_9:CHIP10|X ; -0.442 ; -0.455        ;
+; COUNT_5:CHIP8|X  ; -0.350 ; -1.014        ;
+; DIV_CLK:CHIP1|X  ; -0.273 ; -0.782        ;
+; COUNT_5:CHIP4|X  ; -0.178 ; -0.643        ;
+; COUNT_9:CHIP2|X  ; -0.173 ; -0.446        ;
+; COUNT_9:CHIP6|X  ; -0.168 ; -0.443        ;
++------------------+--------+---------------+
+
+
++------------------------------------------+
+; Slow 1200mV 85C Model Hold Summary       ;
++------------------+-------+---------------+
+; Clock            ; Slack ; End Point TNS ;
++------------------+-------+---------------+
+; COUNT_5:CHIP8|X  ; 0.340 ; 0.000         ;
+; COUNT_5:CHIP4|X  ; 0.347 ; 0.000         ;
+; COUNT_9:CHIP2|X  ; 0.347 ; 0.000         ;
+; COUNT_9:CHIP6|X  ; 0.347 ; 0.000         ;
+; DIV_CLK:CHIP1|X  ; 0.348 ; 0.000         ;
+; COUNT_9:CHIP10|X ; 0.355 ; 0.000         ;
+; CLK              ; 0.630 ; 0.000         ;
++------------------+-------+---------------+
+
+
++-------------------------------------------+
+; Slow 1200mV 85C Model Recovery Summary    ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; COUNT_5:CHIP8|X  ; -1.143 ; -5.715        ;
+; COUNT_9:CHIP10|X ; -0.905 ; -1.810        ;
++------------------+--------+---------------+
+
+
++------------------------------------------+
+; Slow 1200mV 85C Model Removal Summary    ;
++------------------+-------+---------------+
+; Clock            ; Slack ; End Point TNS ;
++------------------+-------+---------------+
+; COUNT_9:CHIP10|X ; 1.171 ; 0.000         ;
+; COUNT_5:CHIP8|X  ; 1.404 ; 0.000         ;
++------------------+-------+---------------+
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 
 +---------------------------------------------------+
 ; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
+<<<<<<< HEAD
 +-----------------+--------+------------------------+
 ; Clock           ; Slack  ; End Point TNS          ;
 +-----------------+--------+------------------------+
@@ -175,6 +282,19 @@ No paths to report.
 ; COUNT_9:CHIP2|X ; -1.403 ; -5.612                 ;
 ; COUNT_9:CHIP6|X ; -1.403 ; -4.209                 ;
 +-----------------+--------+------------------------+
+=======
++------------------+--------+-----------------------+
+; Clock            ; Slack  ; End Point TNS         ;
++------------------+--------+-----------------------+
+; CLK              ; -3.000 ; -36.672               ;
+; COUNT_5:CHIP4|X  ; -1.403 ; -7.015                ;
+; COUNT_5:CHIP8|X  ; -1.403 ; -7.015                ;
+; DIV_CLK:CHIP1|X  ; -1.403 ; -7.015                ;
+; COUNT_9:CHIP2|X  ; -1.403 ; -5.612                ;
+; COUNT_9:CHIP6|X  ; -1.403 ; -5.612                ;
+; COUNT_9:CHIP10|X ; -1.403 ; -2.806                ;
++------------------+--------+-----------------------+
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 
 -----------------------------------------------
@@ -183,6 +303,7 @@ No paths to report.
 No synchronizer chains to report.
 
 
+<<<<<<< HEAD
 +-------------------------------------------------------------------------------------------------+
 ; Slow 1200mV 0C Model Fmax Summary                                                               ;
 +------------+-----------------+-----------------+------------------------------------------------+
@@ -233,10 +354,77 @@ No paths to report.
 ; Slow 1200mV 0C Model Removal Summary ;
 ----------------------------------------
 No paths to report.
+=======
++--------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                ;
++------------+-----------------+------------------+------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name       ; Note                                           ;
++------------+-----------------+------------------+------------------------------------------------+
+; 208.42 MHz ; 208.42 MHz      ; CLK              ;                                                ;
+; 758.73 MHz ; 416.15 MHz      ; COUNT_9:CHIP10|X ; limit due to minimum period restriction (tmin) ;
+; 815.66 MHz ; 416.15 MHz      ; COUNT_5:CHIP8|X  ; limit due to minimum period restriction (tmin) ;
+; 865.05 MHz ; 416.15 MHz      ; DIV_CLK:CHIP1|X  ; limit due to minimum period restriction (tmin) ;
+; 930.23 MHz ; 416.15 MHz      ; COUNT_5:CHIP4|X  ; limit due to minimum period restriction (tmin) ;
+; 937.21 MHz ; 416.15 MHz      ; COUNT_9:CHIP2|X  ; limit due to minimum period restriction (tmin) ;
+; 938.09 MHz ; 416.15 MHz      ; COUNT_9:CHIP6|X  ; limit due to minimum period restriction (tmin) ;
++------------+-----------------+------------------+------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-------------------------------------------+
+; Slow 1200mV 0C Model Setup Summary        ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; CLK              ; -3.798 ; -34.610       ;
+; COUNT_9:CHIP10|X ; -0.318 ; -0.318        ;
+; COUNT_5:CHIP8|X  ; -0.226 ; -0.573        ;
+; DIV_CLK:CHIP1|X  ; -0.156 ; -0.354        ;
+; COUNT_5:CHIP4|X  ; -0.075 ; -0.231        ;
+; COUNT_9:CHIP2|X  ; -0.067 ; -0.143        ;
+; COUNT_9:CHIP6|X  ; -0.066 ; -0.142        ;
++------------------+--------+---------------+
+
+
++------------------------------------------+
+; Slow 1200mV 0C Model Hold Summary        ;
++------------------+-------+---------------+
+; Clock            ; Slack ; End Point TNS ;
++------------------+-------+---------------+
+; COUNT_5:CHIP8|X  ; 0.306 ; 0.000         ;
+; COUNT_9:CHIP2|X  ; 0.311 ; 0.000         ;
+; COUNT_5:CHIP4|X  ; 0.312 ; 0.000         ;
+; COUNT_9:CHIP6|X  ; 0.312 ; 0.000         ;
+; DIV_CLK:CHIP1|X  ; 0.312 ; 0.000         ;
+; COUNT_9:CHIP10|X ; 0.322 ; 0.000         ;
+; CLK              ; 0.584 ; 0.000         ;
++------------------+-------+---------------+
+
+
++-------------------------------------------+
+; Slow 1200mV 0C Model Recovery Summary     ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; COUNT_5:CHIP8|X  ; -0.958 ; -4.790        ;
+; COUNT_9:CHIP10|X ; -0.740 ; -1.480        ;
++------------------+--------+---------------+
+
+
++------------------------------------------+
+; Slow 1200mV 0C Model Removal Summary     ;
++------------------+-------+---------------+
+; Clock            ; Slack ; End Point TNS ;
++------------------+-------+---------------+
+; COUNT_9:CHIP10|X ; 1.079 ; 0.000         ;
+; COUNT_5:CHIP8|X  ; 1.283 ; 0.000         ;
++------------------+-------+---------------+
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 
 +--------------------------------------------------+
 ; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
+<<<<<<< HEAD
 +-----------------+--------+-----------------------+
 ; Clock           ; Slack  ; End Point TNS         ;
 +-----------------+--------+-----------------------+
@@ -246,6 +434,19 @@ No paths to report.
 ; COUNT_9:CHIP2|X ; -1.403 ; -5.612                ;
 ; COUNT_9:CHIP6|X ; -1.403 ; -4.209                ;
 +-----------------+--------+-----------------------+
+=======
++------------------+--------+----------------------+
+; Clock            ; Slack  ; End Point TNS        ;
++------------------+--------+----------------------+
+; CLK              ; -3.000 ; -36.672              ;
+; COUNT_5:CHIP4|X  ; -1.403 ; -7.015               ;
+; COUNT_5:CHIP8|X  ; -1.403 ; -7.015               ;
+; DIV_CLK:CHIP1|X  ; -1.403 ; -7.015               ;
+; COUNT_9:CHIP2|X  ; -1.403 ; -5.612               ;
+; COUNT_9:CHIP6|X  ; -1.403 ; -5.612               ;
+; COUNT_9:CHIP10|X ; -1.403 ; -2.806               ;
++------------------+--------+----------------------+
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 
 ----------------------------------------------
@@ -254,6 +455,7 @@ No paths to report.
 No synchronizer chains to report.
 
 
+<<<<<<< HEAD
 +------------------------------------------+
 ; Fast 1200mV 0C Model Setup Summary       ;
 +-----------------+--------+---------------+
@@ -290,10 +492,61 @@ No paths to report.
 ; Fast 1200mV 0C Model Removal Summary ;
 ----------------------------------------
 No paths to report.
+=======
++-------------------------------------------+
+; Fast 1200mV 0C Model Setup Summary        ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; CLK              ; -1.415 ; -4.565        ;
+; COUNT_9:CHIP10|X ; 0.405  ; 0.000         ;
+; COUNT_5:CHIP8|X  ; 0.415  ; 0.000         ;
+; DIV_CLK:CHIP1|X  ; 0.445  ; 0.000         ;
+; COUNT_9:CHIP2|X  ; 0.491  ; 0.000         ;
+; COUNT_5:CHIP4|X  ; 0.495  ; 0.000         ;
+; COUNT_9:CHIP6|X  ; 0.499  ; 0.000         ;
++------------------+--------+---------------+
+
+
++------------------------------------------+
+; Fast 1200mV 0C Model Hold Summary        ;
++------------------+-------+---------------+
+; Clock            ; Slack ; End Point TNS ;
++------------------+-------+---------------+
+; COUNT_5:CHIP8|X  ; 0.148 ; 0.000         ;
+; COUNT_5:CHIP4|X  ; 0.151 ; 0.000         ;
+; COUNT_9:CHIP2|X  ; 0.151 ; 0.000         ;
+; COUNT_9:CHIP10|X ; 0.152 ; 0.000         ;
+; COUNT_9:CHIP6|X  ; 0.152 ; 0.000         ;
+; DIV_CLK:CHIP1|X  ; 0.152 ; 0.000         ;
+; CLK              ; 0.243 ; 0.000         ;
++------------------+-------+---------------+
+
+
++------------------------------------------+
+; Fast 1200mV 0C Model Recovery Summary    ;
++------------------+-------+---------------+
+; Clock            ; Slack ; End Point TNS ;
++------------------+-------+---------------+
+; COUNT_5:CHIP8|X  ; 0.078 ; 0.000         ;
+; COUNT_9:CHIP10|X ; 0.132 ; 0.000         ;
++------------------+-------+---------------+
+
+
++------------------------------------------+
+; Fast 1200mV 0C Model Removal Summary     ;
++------------------+-------+---------------+
+; Clock            ; Slack ; End Point TNS ;
++------------------+-------+---------------+
+; COUNT_9:CHIP10|X ; 0.493 ; 0.000         ;
+; COUNT_5:CHIP8|X  ; 0.573 ; 0.000         ;
++------------------+-------+---------------+
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 
 +--------------------------------------------------+
 ; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
+<<<<<<< HEAD
 +-----------------+--------+-----------------------+
 ; Clock           ; Slack  ; End Point TNS         ;
 +-----------------+--------+-----------------------+
@@ -303,6 +556,19 @@ No paths to report.
 ; COUNT_9:CHIP2|X ; -1.000 ; -4.000                ;
 ; COUNT_9:CHIP6|X ; -1.000 ; -3.000                ;
 +-----------------+--------+-----------------------+
+=======
++------------------+--------+----------------------+
+; Clock            ; Slack  ; End Point TNS        ;
++------------------+--------+----------------------+
+; CLK              ; -3.000 ; -27.637              ;
+; COUNT_5:CHIP4|X  ; -1.000 ; -5.000               ;
+; COUNT_5:CHIP8|X  ; -1.000 ; -5.000               ;
+; DIV_CLK:CHIP1|X  ; -1.000 ; -5.000               ;
+; COUNT_9:CHIP2|X  ; -1.000 ; -4.000               ;
+; COUNT_9:CHIP6|X  ; -1.000 ; -4.000               ;
+; COUNT_9:CHIP10|X ; -1.000 ; -2.000               ;
++------------------+--------+----------------------+
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 
 ----------------------------------------------
@@ -311,6 +577,7 @@ No paths to report.
 No synchronizer chains to report.
 
 
+<<<<<<< HEAD
 +-------------------------------------------------------------------------------+
 ; Multicorner Timing Analysis Summary                                           ;
 +------------------+---------+-------+----------+---------+---------------------+
@@ -329,6 +596,30 @@ No synchronizer chains to report.
 ;  COUNT_9:CHIP6|X ; -0.301  ; 0.000 ; N/A      ; N/A     ; -4.209              ;
 ;  DIV_CLK:CHIP1|X ; -0.981  ; 0.000 ; N/A      ; N/A     ; -7.015              ;
 +------------------+---------+-------+----------+---------+---------------------+
+=======
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++-------------------+---------+-------+----------+---------+---------------------+
+; Clock             ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++-------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack  ; -4.188  ; 0.148 ; -1.143   ; 0.493   ; -3.000              ;
+;  CLK              ; -4.188  ; 0.243 ; N/A      ; N/A     ; -3.000              ;
+;  COUNT_5:CHIP4|X  ; -0.178  ; 0.151 ; N/A      ; N/A     ; -1.403              ;
+;  COUNT_5:CHIP8|X  ; -0.350  ; 0.148 ; -1.143   ; 0.573   ; -1.403              ;
+;  COUNT_9:CHIP10|X ; -0.442  ; 0.152 ; -0.905   ; 0.493   ; -1.403              ;
+;  COUNT_9:CHIP2|X  ; -0.173  ; 0.151 ; N/A      ; N/A     ; -1.403              ;
+;  COUNT_9:CHIP6|X  ; -0.168  ; 0.152 ; N/A      ; N/A     ; -1.403              ;
+;  DIV_CLK:CHIP1|X  ; -0.273  ; 0.152 ; N/A      ; N/A     ; -1.403              ;
+; Design-wide TNS   ; -44.3   ; 0.0   ; -7.525   ; 0.0     ; -71.747             ;
+;  CLK              ; -40.517 ; 0.000 ; N/A      ; N/A     ; -36.672             ;
+;  COUNT_5:CHIP4|X  ; -0.643  ; 0.000 ; N/A      ; N/A     ; -7.015              ;
+;  COUNT_5:CHIP8|X  ; -1.014  ; 0.000 ; -5.715   ; 0.000   ; -7.015              ;
+;  COUNT_9:CHIP10|X ; -0.455  ; 0.000 ; -1.810   ; 0.000   ; -2.806              ;
+;  COUNT_9:CHIP2|X  ; -0.446  ; 0.000 ; N/A      ; N/A     ; -5.612              ;
+;  COUNT_9:CHIP6|X  ; -0.443  ; 0.000 ; N/A      ; N/A     ; -5.612              ;
+;  DIV_CLK:CHIP1|X  ; -0.782  ; 0.000 ; N/A      ; N/A     ; -7.015              ;
++-------------------+---------+-------+----------+---------+---------------------+
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -364,6 +655,23 @@ No synchronizer chains to report.
 ; DISPLAY_3[4] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; DISPLAY_3[5] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; DISPLAY_3[6] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+<<<<<<< HEAD
+=======
+; DISPLAY_4[0] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DISPLAY_4[1] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DISPLAY_4[2] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DISPLAY_4[3] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DISPLAY_4[4] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DISPLAY_4[5] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DISPLAY_4[6] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DISPLAY_5[0] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DISPLAY_5[1] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DISPLAY_5[2] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DISPLAY_5[3] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DISPLAY_5[4] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DISPLAY_5[5] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DISPLAY_5[6] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; ~ALTERA_TDO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 +--------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 
@@ -417,6 +725,23 @@ No synchronizer chains to report.
 ; DISPLAY_3[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
 ; DISPLAY_3[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
 ; DISPLAY_3[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+<<<<<<< HEAD
+=======
+; DISPLAY_4[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_4[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_4[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_4[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_4[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_4[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_4[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_5[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_5[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_5[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_5[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_5[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_5[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_5[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; ~ALTERA_TDO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.39e-08 V                   ; 2.39 V              ; -0.0409 V           ; 0.21 V                               ; 0.121 V                              ; 4.7e-10 s                   ; 5.93e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.39e-08 V                  ; 2.39 V             ; -0.0409 V          ; 0.21 V                              ; 0.121 V                             ; 4.7e-10 s                  ; 5.93e-10 s                 ; No                        ; Yes                       ;
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -454,6 +779,23 @@ No synchronizer chains to report.
 ; DISPLAY_3[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
 ; DISPLAY_3[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
 ; DISPLAY_3[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+<<<<<<< HEAD
+=======
+; DISPLAY_4[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; DISPLAY_4[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+; DISPLAY_4[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+; DISPLAY_4[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; DISPLAY_4[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+; DISPLAY_4[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; DISPLAY_4[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; DISPLAY_5[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; DISPLAY_5[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; DISPLAY_5[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+; DISPLAY_5[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+; DISPLAY_5[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; DISPLAY_5[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; DISPLAY_5[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; ~ALTERA_TDO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.97e-06 V                   ; 2.36 V              ; -0.0173 V           ; 0.144 V                              ; 0.094 V                              ; 6.44e-10 s                  ; 7.2e-10 s                   ; No                         ; Yes                        ; 2.32 V                      ; 1.97e-06 V                  ; 2.36 V             ; -0.0173 V          ; 0.144 V                             ; 0.094 V                             ; 6.44e-10 s                 ; 7.2e-10 s                  ; No                        ; Yes                       ;
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -491,10 +833,28 @@ No synchronizer chains to report.
 ; DISPLAY_3[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
 ; DISPLAY_3[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
 ; DISPLAY_3[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+<<<<<<< HEAD
+=======
+; DISPLAY_4[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_4[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_4[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_4[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_4[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_4[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_4[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_5[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_5[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_5[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_5[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_5[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_5[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; DISPLAY_5[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; ~ALTERA_TDO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.68e-07 V                   ; 2.73 V              ; -0.0395 V           ; 0.361 V                              ; 0.109 V                              ; 3.1e-10 s                   ; 4.41e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.68e-07 V                  ; 2.73 V             ; -0.0395 V          ; 0.361 V                             ; 0.109 V                             ; 3.1e-10 s                  ; 4.41e-10 s                 ; No                        ; Yes                       ;
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
+<<<<<<< HEAD
 +-------------------------------------------------------------------------------+
 ; Setup Transfers                                                               ;
 +-----------------+-----------------+----------+----------+----------+----------+
@@ -522,6 +882,65 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; COUNT_9:CHIP6|X ; COUNT_9:CHIP6|X ; 7        ; 0        ; 0        ; 0        ;
 ; DIV_CLK:CHIP1|X ; DIV_CLK:CHIP1|X ; 16       ; 0        ; 0        ; 0        ;
 +-----------------+-----------------+----------+----------+----------+----------+
+=======
++---------------------------------------------------------------------------------+
+; Setup Transfers                                                                 ;
++------------------+------------------+----------+----------+----------+----------+
+; From Clock       ; To Clock         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------+------------------+----------+----------+----------+----------+
+; CLK              ; CLK              ; 460      ; 0        ; 0        ; 0        ;
+; DIV_CLK:CHIP1|X  ; CLK              ; 1        ; 1        ; 0        ; 0        ;
+; COUNT_5:CHIP4|X  ; COUNT_5:CHIP4|X  ; 16       ; 0        ; 0        ; 0        ;
+; COUNT_5:CHIP8|X  ; COUNT_5:CHIP8|X  ; 16       ; 0        ; 0        ; 0        ;
+; COUNT_9:CHIP2|X  ; COUNT_9:CHIP2|X  ; 10       ; 0        ; 0        ; 0        ;
+; COUNT_9:CHIP6|X  ; COUNT_9:CHIP6|X  ; 10       ; 0        ; 0        ; 0        ;
+; COUNT_9:CHIP10|X ; COUNT_9:CHIP10|X ; 4        ; 0        ; 0        ; 0        ;
+; DIV_CLK:CHIP1|X  ; DIV_CLK:CHIP1|X  ; 16       ; 0        ; 0        ; 0        ;
++------------------+------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------+
+; Hold Transfers                                                                  ;
++------------------+------------------+----------+----------+----------+----------+
+; From Clock       ; To Clock         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------+------------------+----------+----------+----------+----------+
+; CLK              ; CLK              ; 460      ; 0        ; 0        ; 0        ;
+; DIV_CLK:CHIP1|X  ; CLK              ; 1        ; 1        ; 0        ; 0        ;
+; COUNT_5:CHIP4|X  ; COUNT_5:CHIP4|X  ; 16       ; 0        ; 0        ; 0        ;
+; COUNT_5:CHIP8|X  ; COUNT_5:CHIP8|X  ; 16       ; 0        ; 0        ; 0        ;
+; COUNT_9:CHIP2|X  ; COUNT_9:CHIP2|X  ; 10       ; 0        ; 0        ; 0        ;
+; COUNT_9:CHIP6|X  ; COUNT_9:CHIP6|X  ; 10       ; 0        ; 0        ; 0        ;
+; COUNT_9:CHIP10|X ; COUNT_9:CHIP10|X ; 4        ; 0        ; 0        ; 0        ;
+; DIV_CLK:CHIP1|X  ; DIV_CLK:CHIP1|X  ; 16       ; 0        ; 0        ; 0        ;
++------------------+------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------+
+; Recovery Transfers                                                              ;
++------------------+------------------+----------+----------+----------+----------+
+; From Clock       ; To Clock         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------+------------------+----------+----------+----------+----------+
+; COUNT_5:CHIP8|X  ; COUNT_5:CHIP8|X  ; 10       ; 0        ; 0        ; 0        ;
+; COUNT_9:CHIP10|X ; COUNT_5:CHIP8|X  ; 10       ; 0        ; 0        ; 0        ;
+; COUNT_5:CHIP8|X  ; COUNT_9:CHIP10|X ; 4        ; 0        ; 0        ; 0        ;
+; COUNT_9:CHIP10|X ; COUNT_9:CHIP10|X ; 4        ; 0        ; 0        ; 0        ;
++------------------+------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------+
+; Removal Transfers                                                               ;
++------------------+------------------+----------+----------+----------+----------+
+; From Clock       ; To Clock         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------+------------------+----------+----------+----------+----------+
+; COUNT_5:CHIP8|X  ; COUNT_5:CHIP8|X  ; 10       ; 0        ; 0        ; 0        ;
+; COUNT_9:CHIP10|X ; COUNT_5:CHIP8|X  ; 10       ; 0        ; 0        ; 0        ;
+; COUNT_5:CHIP8|X  ; COUNT_9:CHIP10|X ; 4        ; 0        ; 0        ; 0        ;
+; COUNT_9:CHIP10|X ; COUNT_9:CHIP10|X ; 4        ; 0        ; 0        ; 0        ;
++------------------+------------------+----------+----------+----------+----------+
+>>>>>>> 8be6b77 (VHDL Relogio)
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -546,6 +965,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 0     ; 0    ;
 ; Unconstrained Input Port Paths  ; 0     ; 0    ;
+<<<<<<< HEAD
 ; Unconstrained Output Ports      ; 28    ; 28   ;
 ; Unconstrained Output Port Paths ; 94    ; 94   ;
 +---------------------------------+-------+------+
@@ -562,6 +982,26 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; COUNT_9:CHIP6|X ; COUNT_9:CHIP6|X ; Base ; Constrained ;
 ; DIV_CLK:CHIP1|X ; DIV_CLK:CHIP1|X ; Base ; Constrained ;
 +-----------------+-----------------+------+-------------+
+=======
+; Unconstrained Output Ports      ; 41    ; 41   ;
+; Unconstrained Output Port Paths ; 136   ; 136  ;
++---------------------------------+-------+------+
+
+
++----------------------------------------------------------+
+; Clock Status Summary                                     ;
++------------------+------------------+------+-------------+
+; Target           ; Clock            ; Type ; Status      ;
++------------------+------------------+------+-------------+
+; CLK              ; CLK              ; Base ; Constrained ;
+; COUNT_5:CHIP4|X  ; COUNT_5:CHIP4|X  ; Base ; Constrained ;
+; COUNT_5:CHIP8|X  ; COUNT_5:CHIP8|X  ; Base ; Constrained ;
+; COUNT_9:CHIP2|X  ; COUNT_9:CHIP2|X  ; Base ; Constrained ;
+; COUNT_9:CHIP6|X  ; COUNT_9:CHIP6|X  ; Base ; Constrained ;
+; COUNT_9:CHIP10|X ; COUNT_9:CHIP10|X ; Base ; Constrained ;
+; DIV_CLK:CHIP1|X  ; DIV_CLK:CHIP1|X  ; Base ; Constrained ;
++------------------+------------------+------+-------------+
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 
 +------------------------------------------------------------------------------------------------------+
@@ -597,6 +1037,22 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; DISPLAY_3[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DISPLAY_3[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DISPLAY_3[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+<<<<<<< HEAD
+=======
+; DISPLAY_4[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_4[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_4[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_4[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_4[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_4[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_4[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_5[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_5[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_5[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_5[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_5[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_5[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 +--------------+---------------------------------------------------------------------------------------+
 
 
@@ -633,6 +1089,22 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; DISPLAY_3[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DISPLAY_3[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; DISPLAY_3[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+<<<<<<< HEAD
+=======
+; DISPLAY_4[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_4[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_4[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_4[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_4[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_4[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_4[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_5[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_5[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_5[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_5[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_5[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; DISPLAY_5[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 +--------------+---------------------------------------------------------------------------------------+
 
 
@@ -642,7 +1114,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Fri Dec 05 14:26:02 2025
+=======
+    Info: Processing started: Fri Dec 19 15:48:16 2025
+>>>>>>> 8be6b77 (VHDL Relogio)
 Info: Command: quartus_sta DDD -c DDD
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -657,12 +1133,18 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name COUNT_9:CHIP2|X COUNT_9:CHIP2|X
     Info (332105): create_clock -period 1.000 -name COUNT_5:CHIP4|X COUNT_5:CHIP4|X
     Info (332105): create_clock -period 1.000 -name COUNT_9:CHIP6|X COUNT_9:CHIP6|X
+<<<<<<< HEAD
+=======
+    Info (332105): create_clock -period 1.000 -name COUNT_5:CHIP8|X COUNT_5:CHIP8|X
+    Info (332105): create_clock -period 1.000 -name COUNT_9:CHIP10|X COUNT_9:CHIP10|X
+>>>>>>> 8be6b77 (VHDL Relogio)
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
+<<<<<<< HEAD
 Info (332146): Worst-case setup slack is -4.109
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -681,19 +1163,60 @@ Info (332146): Worst-case hold slack is 0.347
     Info (332119):     0.631               0.000 CLK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
+=======
+Info (332146): Worst-case setup slack is -4.188
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -4.188             -40.517 CLK 
+    Info (332119):    -0.442              -0.455 COUNT_9:CHIP10|X 
+    Info (332119):    -0.350              -1.014 COUNT_5:CHIP8|X 
+    Info (332119):    -0.273              -0.782 DIV_CLK:CHIP1|X 
+    Info (332119):    -0.178              -0.643 COUNT_5:CHIP4|X 
+    Info (332119):    -0.173              -0.446 COUNT_9:CHIP2|X 
+    Info (332119):    -0.168              -0.443 COUNT_9:CHIP6|X 
+Info (332146): Worst-case hold slack is 0.340
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.340               0.000 COUNT_5:CHIP8|X 
+    Info (332119):     0.347               0.000 COUNT_5:CHIP4|X 
+    Info (332119):     0.347               0.000 COUNT_9:CHIP2|X 
+    Info (332119):     0.347               0.000 COUNT_9:CHIP6|X 
+    Info (332119):     0.348               0.000 DIV_CLK:CHIP1|X 
+    Info (332119):     0.355               0.000 COUNT_9:CHIP10|X 
+    Info (332119):     0.630               0.000 CLK 
+Info (332146): Worst-case recovery slack is -1.143
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.143              -5.715 COUNT_5:CHIP8|X 
+    Info (332119):    -0.905              -1.810 COUNT_9:CHIP10|X 
+Info (332146): Worst-case removal slack is 1.171
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.171               0.000 COUNT_9:CHIP10|X 
+    Info (332119):     1.404               0.000 COUNT_5:CHIP8|X 
+>>>>>>> 8be6b77 (VHDL Relogio)
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000             -36.672 CLK 
     Info (332119):    -1.403              -7.015 COUNT_5:CHIP4|X 
+<<<<<<< HEAD
     Info (332119):    -1.403              -7.015 DIV_CLK:CHIP1|X 
     Info (332119):    -1.403              -5.612 COUNT_9:CHIP2|X 
     Info (332119):    -1.403              -4.209 COUNT_9:CHIP6|X 
+=======
+    Info (332119):    -1.403              -7.015 COUNT_5:CHIP8|X 
+    Info (332119):    -1.403              -7.015 DIV_CLK:CHIP1|X 
+    Info (332119):    -1.403              -5.612 COUNT_9:CHIP2|X 
+    Info (332119):    -1.403              -5.612 COUNT_9:CHIP6|X 
+    Info (332119):    -1.403              -2.806 COUNT_9:CHIP10|X 
+>>>>>>> 8be6b77 (VHDL Relogio)
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
+<<<<<<< HEAD
 Info (332146): Worst-case setup slack is -3.765
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -712,11 +1235,44 @@ Info (332146): Worst-case hold slack is 0.312
     Info (332119):     0.584               0.000 CLK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
+=======
+Info (332146): Worst-case setup slack is -3.798
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.798             -34.610 CLK 
+    Info (332119):    -0.318              -0.318 COUNT_9:CHIP10|X 
+    Info (332119):    -0.226              -0.573 COUNT_5:CHIP8|X 
+    Info (332119):    -0.156              -0.354 DIV_CLK:CHIP1|X 
+    Info (332119):    -0.075              -0.231 COUNT_5:CHIP4|X 
+    Info (332119):    -0.067              -0.143 COUNT_9:CHIP2|X 
+    Info (332119):    -0.066              -0.142 COUNT_9:CHIP6|X 
+Info (332146): Worst-case hold slack is 0.306
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.306               0.000 COUNT_5:CHIP8|X 
+    Info (332119):     0.311               0.000 COUNT_9:CHIP2|X 
+    Info (332119):     0.312               0.000 COUNT_5:CHIP4|X 
+    Info (332119):     0.312               0.000 COUNT_9:CHIP6|X 
+    Info (332119):     0.312               0.000 DIV_CLK:CHIP1|X 
+    Info (332119):     0.322               0.000 COUNT_9:CHIP10|X 
+    Info (332119):     0.584               0.000 CLK 
+Info (332146): Worst-case recovery slack is -0.958
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.958              -4.790 COUNT_5:CHIP8|X 
+    Info (332119):    -0.740              -1.480 COUNT_9:CHIP10|X 
+Info (332146): Worst-case removal slack is 1.079
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.079               0.000 COUNT_9:CHIP10|X 
+    Info (332119):     1.283               0.000 COUNT_5:CHIP8|X 
+>>>>>>> 8be6b77 (VHDL Relogio)
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000             -36.672 CLK 
     Info (332119):    -1.403              -7.015 COUNT_5:CHIP4|X 
+<<<<<<< HEAD
     Info (332119):    -1.403              -7.015 DIV_CLK:CHIP1|X 
     Info (332119):    -1.403              -5.612 COUNT_9:CHIP2|X 
     Info (332119):    -1.403              -4.209 COUNT_9:CHIP6|X 
@@ -749,12 +1305,67 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):    -1.000              -5.000 DIV_CLK:CHIP1|X 
     Info (332119):    -1.000              -4.000 COUNT_9:CHIP2|X 
     Info (332119):    -1.000              -3.000 COUNT_9:CHIP6|X 
+=======
+    Info (332119):    -1.403              -7.015 COUNT_5:CHIP8|X 
+    Info (332119):    -1.403              -7.015 DIV_CLK:CHIP1|X 
+    Info (332119):    -1.403              -5.612 COUNT_9:CHIP2|X 
+    Info (332119):    -1.403              -5.612 COUNT_9:CHIP6|X 
+    Info (332119):    -1.403              -2.806 COUNT_9:CHIP10|X 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.415
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.415              -4.565 CLK 
+    Info (332119):     0.405               0.000 COUNT_9:CHIP10|X 
+    Info (332119):     0.415               0.000 COUNT_5:CHIP8|X 
+    Info (332119):     0.445               0.000 DIV_CLK:CHIP1|X 
+    Info (332119):     0.491               0.000 COUNT_9:CHIP2|X 
+    Info (332119):     0.495               0.000 COUNT_5:CHIP4|X 
+    Info (332119):     0.499               0.000 COUNT_9:CHIP6|X 
+Info (332146): Worst-case hold slack is 0.148
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.148               0.000 COUNT_5:CHIP8|X 
+    Info (332119):     0.151               0.000 COUNT_5:CHIP4|X 
+    Info (332119):     0.151               0.000 COUNT_9:CHIP2|X 
+    Info (332119):     0.152               0.000 COUNT_9:CHIP10|X 
+    Info (332119):     0.152               0.000 COUNT_9:CHIP6|X 
+    Info (332119):     0.152               0.000 DIV_CLK:CHIP1|X 
+    Info (332119):     0.243               0.000 CLK 
+Info (332146): Worst-case recovery slack is 0.078
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.078               0.000 COUNT_5:CHIP8|X 
+    Info (332119):     0.132               0.000 COUNT_9:CHIP10|X 
+Info (332146): Worst-case removal slack is 0.493
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.493               0.000 COUNT_9:CHIP10|X 
+    Info (332119):     0.573               0.000 COUNT_5:CHIP8|X 
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000             -27.637 CLK 
+    Info (332119):    -1.000              -5.000 COUNT_5:CHIP4|X 
+    Info (332119):    -1.000              -5.000 COUNT_5:CHIP8|X 
+    Info (332119):    -1.000              -5.000 DIV_CLK:CHIP1|X 
+    Info (332119):    -1.000              -4.000 COUNT_9:CHIP2|X 
+    Info (332119):    -1.000              -4.000 COUNT_9:CHIP6|X 
+    Info (332119):    -1.000              -2.000 COUNT_9:CHIP10|X 
+>>>>>>> 8be6b77 (VHDL Relogio)
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 4789 megabytes
+<<<<<<< HEAD
     Info: Processing ended: Fri Dec 05 14:26:06 2025
     Info: Elapsed time: 00:00:04
+=======
+    Info: Processing ended: Fri Dec 19 15:48:19 2025
+    Info: Elapsed time: 00:00:03
+>>>>>>> 8be6b77 (VHDL Relogio)
     Info: Total CPU time (on all processors): 00:00:03
 
 

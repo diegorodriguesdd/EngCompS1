@@ -4,11 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-<<<<<<< HEAD
-		Device PartName(10M50DAF484) Path("C:/Users/Alunos/Documents/D/ED/Projetos/quartus/output_files/") File("DDD.sof") MfrSpec(OpMask(1));
-=======
 		Device PartName(10M50DAF484) Path("C:/Users/Alunos/Documents/D/Projetos/quartus/output_files/") File("DDD.sof") MfrSpec(OpMask(1));
->>>>>>> 8be6b77 (VHDL Relogio)
 
 ChainEnd;
 

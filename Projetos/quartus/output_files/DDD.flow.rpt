@@ -1,5 +1,9 @@
 Flow report for DDD
+<<<<<<< HEAD
 Fri Dec 05 14:26:06 2025
+=======
+Fri Dec 19 15:48:19 2025
+>>>>>>> 8be6b77 (VHDL Relogio)
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,18 +45,30 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Flow Status                        ; Successful - Fri Dec 05 14:26:01 2025       ;
+=======
+; Flow Status                        ; Successful - Fri Dec 19 15:48:15 2025       ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; DDD                                         ;
 ; Top-level Entity Name              ; Cronometro                                  ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
+<<<<<<< HEAD
 ; Total logic elements               ; 84 / 49,760 ( < 1 % )                       ;
 ;     Total combinational functions  ; 83 / 49,760 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 41 / 49,760 ( < 1 % )                       ;
 ; Total registers                    ; 41                                          ;
 ; Total pins                         ; 29 / 360 ( 8 % )                            ;
+=======
+; Total logic elements               ; 103 / 49,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 102 / 49,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 49 / 49,760 ( < 1 % )                       ;
+; Total registers                    ; 49                                          ;
+; Total pins                         ; 43 / 360 ( 12 % )                           ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -67,7 +83,11 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< HEAD
 ; Start date & time ; 12/05/2025 14:25:32 ;
+=======
+; Start date & time ; 12/19/2025 15:47:44 ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DDD                 ;
 +-------------------+---------------------+
@@ -78,7 +98,11 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
+<<<<<<< HEAD
 ; COMPILER_SIGNATURE_ID               ; 10995770589195.176495553206864         ; --            ; --          ; --         ;
+=======
+; COMPILER_SIGNATURE_ID               ; 10995770589195.176617006407664         ; --            ; --          ; --         ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; Cronometro  ; Top        ;
@@ -94,11 +118,19 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 4784 MB             ; 00:00:31                           ;
 ; Fitter                    ; 00:00:10     ; 1.0                     ; 5368 MB             ; 00:00:13                           ;
 ; Assembler                 ; 00:00:03     ; 1.0                     ; 4677 MB             ; 00:00:03                           ;
 ; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4789 MB             ; 00:00:03                           ;
 ; Total                     ; 00:00:31     ; --                      ; --                  ; 00:00:50                           ;
+=======
+; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 4785 MB             ; 00:00:32                           ;
+; Fitter                    ; 00:00:11     ; 1.0                     ; 5368 MB             ; 00:00:14                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4675 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4789 MB             ; 00:00:03                           ;
+; Total                     ; 00:00:31     ; --                      ; --                  ; 00:00:52                           ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -3,6 +3,7 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLK'
+<<<<<<< HEAD
 Slack : -4.109
 TNS   : -41.395
 
@@ -21,6 +22,38 @@ TNS   : -0.301
 Type  : Slow 1200mV 85C Model Setup 'COUNT_9:CHIP2|X'
 Slack : -0.156
 TNS   : -0.428
+=======
+Slack : -4.188
+TNS   : -40.517
+
+Type  : Slow 1200mV 85C Model Setup 'COUNT_9:CHIP10|X'
+Slack : -0.442
+TNS   : -0.455
+
+Type  : Slow 1200mV 85C Model Setup 'COUNT_5:CHIP8|X'
+Slack : -0.350
+TNS   : -1.014
+
+Type  : Slow 1200mV 85C Model Setup 'DIV_CLK:CHIP1|X'
+Slack : -0.273
+TNS   : -0.782
+
+Type  : Slow 1200mV 85C Model Setup 'COUNT_5:CHIP4|X'
+Slack : -0.178
+TNS   : -0.643
+
+Type  : Slow 1200mV 85C Model Setup 'COUNT_9:CHIP2|X'
+Slack : -0.173
+TNS   : -0.446
+
+Type  : Slow 1200mV 85C Model Setup 'COUNT_9:CHIP6|X'
+Slack : -0.168
+TNS   : -0.443
+
+Type  : Slow 1200mV 85C Model Hold 'COUNT_5:CHIP8|X'
+Slack : 0.340
+TNS   : 0.000
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 Type  : Slow 1200mV 85C Model Hold 'COUNT_5:CHIP4|X'
 Slack : 0.347
@@ -31,15 +64,44 @@ Slack : 0.347
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'COUNT_9:CHIP6|X'
+<<<<<<< HEAD
 Slack : 0.348
+=======
+Slack : 0.347
+>>>>>>> 8be6b77 (VHDL Relogio)
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'DIV_CLK:CHIP1|X'
 Slack : 0.348
 TNS   : 0.000
 
+<<<<<<< HEAD
 Type  : Slow 1200mV 85C Model Hold 'CLK'
 Slack : 0.631
+=======
+Type  : Slow 1200mV 85C Model Hold 'COUNT_9:CHIP10|X'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLK'
+Slack : 0.630
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'COUNT_5:CHIP8|X'
+Slack : -1.143
+TNS   : -5.715
+
+Type  : Slow 1200mV 85C Model Recovery 'COUNT_9:CHIP10|X'
+Slack : -0.905
+TNS   : -1.810
+
+Type  : Slow 1200mV 85C Model Removal 'COUNT_9:CHIP10|X'
+Slack : 1.171
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'COUNT_5:CHIP8|X'
+Slack : 1.404
+>>>>>>> 8be6b77 (VHDL Relogio)
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
@@ -50,6 +112,13 @@ Type  : Slow 1200mV 85C Model Minimum Pulse Width 'COUNT_5:CHIP4|X'
 Slack : -1.403
 TNS   : -7.015
 
+<<<<<<< HEAD
+=======
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'COUNT_5:CHIP8|X'
+Slack : -1.403
+TNS   : -7.015
+
+>>>>>>> 8be6b77 (VHDL Relogio)
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DIV_CLK:CHIP1|X'
 Slack : -1.403
 TNS   : -7.015
@@ -60,6 +129,7 @@ TNS   : -5.612
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'COUNT_9:CHIP6|X'
 Slack : -1.403
+<<<<<<< HEAD
 TNS   : -4.209
 
 Type  : Slow 1200mV 0C Model Setup 'CLK'
@@ -87,6 +157,51 @@ Slack : 0.312
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'COUNT_9:CHIP2|X'
+=======
+TNS   : -5.612
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'COUNT_9:CHIP10|X'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Slow 1200mV 0C Model Setup 'CLK'
+Slack : -3.798
+TNS   : -34.610
+
+Type  : Slow 1200mV 0C Model Setup 'COUNT_9:CHIP10|X'
+Slack : -0.318
+TNS   : -0.318
+
+Type  : Slow 1200mV 0C Model Setup 'COUNT_5:CHIP8|X'
+Slack : -0.226
+TNS   : -0.573
+
+Type  : Slow 1200mV 0C Model Setup 'DIV_CLK:CHIP1|X'
+Slack : -0.156
+TNS   : -0.354
+
+Type  : Slow 1200mV 0C Model Setup 'COUNT_5:CHIP4|X'
+Slack : -0.075
+TNS   : -0.231
+
+Type  : Slow 1200mV 0C Model Setup 'COUNT_9:CHIP2|X'
+Slack : -0.067
+TNS   : -0.143
+
+Type  : Slow 1200mV 0C Model Setup 'COUNT_9:CHIP6|X'
+Slack : -0.066
+TNS   : -0.142
+
+Type  : Slow 1200mV 0C Model Hold 'COUNT_5:CHIP8|X'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'COUNT_9:CHIP2|X'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'COUNT_5:CHIP4|X'
+>>>>>>> 8be6b77 (VHDL Relogio)
 Slack : 0.312
 TNS   : 0.000
 
@@ -98,10 +213,36 @@ Type  : Slow 1200mV 0C Model Hold 'DIV_CLK:CHIP1|X'
 Slack : 0.312
 TNS   : 0.000
 
+<<<<<<< HEAD
+=======
+Type  : Slow 1200mV 0C Model Hold 'COUNT_9:CHIP10|X'
+Slack : 0.322
+TNS   : 0.000
+
+>>>>>>> 8be6b77 (VHDL Relogio)
 Type  : Slow 1200mV 0C Model Hold 'CLK'
 Slack : 0.584
 TNS   : 0.000
 
+<<<<<<< HEAD
+=======
+Type  : Slow 1200mV 0C Model Recovery 'COUNT_5:CHIP8|X'
+Slack : -0.958
+TNS   : -4.790
+
+Type  : Slow 1200mV 0C Model Recovery 'COUNT_9:CHIP10|X'
+Slack : -0.740
+TNS   : -1.480
+
+Type  : Slow 1200mV 0C Model Removal 'COUNT_9:CHIP10|X'
+Slack : 1.079
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'COUNT_5:CHIP8|X'
+Slack : 1.283
+TNS   : 0.000
+
+>>>>>>> 8be6b77 (VHDL Relogio)
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
 TNS   : -36.672
@@ -110,6 +251,13 @@ Type  : Slow 1200mV 0C Model Minimum Pulse Width 'COUNT_5:CHIP4|X'
 Slack : -1.403
 TNS   : -7.015
 
+<<<<<<< HEAD
+=======
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'COUNT_5:CHIP8|X'
+Slack : -1.403
+TNS   : -7.015
+
+>>>>>>> 8be6b77 (VHDL Relogio)
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DIV_CLK:CHIP1|X'
 Slack : -1.403
 TNS   : -7.015
@@ -120,6 +268,7 @@ TNS   : -5.612
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'COUNT_9:CHIP6|X'
 Slack : -1.403
+<<<<<<< HEAD
 TNS   : -4.209
 
 Type  : Fast 1200mV 0C Model Setup 'CLK'
@@ -147,6 +296,55 @@ Slack : 0.152
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'COUNT_9:CHIP2|X'
+=======
+TNS   : -5.612
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'COUNT_9:CHIP10|X'
+Slack : -1.403
+TNS   : -2.806
+
+Type  : Fast 1200mV 0C Model Setup 'CLK'
+Slack : -1.415
+TNS   : -4.565
+
+Type  : Fast 1200mV 0C Model Setup 'COUNT_9:CHIP10|X'
+Slack : 0.405
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'COUNT_5:CHIP8|X'
+Slack : 0.415
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'DIV_CLK:CHIP1|X'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'COUNT_9:CHIP2|X'
+Slack : 0.491
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'COUNT_5:CHIP4|X'
+Slack : 0.495
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'COUNT_9:CHIP6|X'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'COUNT_5:CHIP8|X'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'COUNT_5:CHIP4|X'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'COUNT_9:CHIP2|X'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'COUNT_9:CHIP10|X'
+>>>>>>> 8be6b77 (VHDL Relogio)
 Slack : 0.152
 TNS   : 0.000
 
@@ -159,17 +357,48 @@ Slack : 0.152
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'CLK'
+<<<<<<< HEAD
 Slack : 0.244
+=======
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'COUNT_5:CHIP8|X'
+Slack : 0.078
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'COUNT_9:CHIP10|X'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'COUNT_9:CHIP10|X'
+Slack : 0.493
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'COUNT_5:CHIP8|X'
+Slack : 0.573
+>>>>>>> 8be6b77 (VHDL Relogio)
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
 Slack : -3.000
+<<<<<<< HEAD
 TNS   : -27.814
+=======
+TNS   : -27.637
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'COUNT_5:CHIP4|X'
 Slack : -1.000
 TNS   : -5.000
 
+<<<<<<< HEAD
+=======
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'COUNT_5:CHIP8|X'
+Slack : -1.000
+TNS   : -5.000
+
+>>>>>>> 8be6b77 (VHDL Relogio)
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DIV_CLK:CHIP1|X'
 Slack : -1.000
 TNS   : -5.000
@@ -180,6 +409,14 @@ TNS   : -4.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'COUNT_9:CHIP6|X'
 Slack : -1.000
+<<<<<<< HEAD
 TNS   : -3.000
+=======
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'COUNT_9:CHIP10|X'
+Slack : -1.000
+TNS   : -2.000
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 ------------------------------------------------------------

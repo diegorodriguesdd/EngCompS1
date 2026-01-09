@@ -1,5 +1,9 @@
 Fitter report for DDD
+<<<<<<< HEAD
 Fri Dec 05 14:25:57 2025
+=======
+Fri Dec 19 15:48:10 2025
+>>>>>>> 8be6b77 (VHDL Relogio)
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -69,18 +73,30 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Fitter Status                      ; Successful - Fri Dec 05 14:25:57 2025       ;
+=======
+; Fitter Status                      ; Successful - Fri Dec 19 15:48:10 2025       ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; DDD                                         ;
 ; Top-level Entity Name              ; Cronometro                                  ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
+<<<<<<< HEAD
 ; Total logic elements               ; 84 / 49,760 ( < 1 % )                       ;
 ;     Total combinational functions  ; 83 / 49,760 ( < 1 % )                       ;
 ;     Dedicated logic registers      ; 41 / 49,760 ( < 1 % )                       ;
 ; Total registers                    ; 41                                          ;
 ; Total pins                         ; 29 / 360 ( 8 % )                            ;
+=======
+; Total logic elements               ; 103 / 49,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 102 / 49,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 49 / 49,760 ( < 1 % )                       ;
+; Total registers                    ; 49                                          ;
+; Total pins                         ; 43 / 360 ( 12 % )                           ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -160,7 +176,11 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+<<<<<<< HEAD
 ;     Processor 2            ;   1.1%      ;
+=======
+;     Processor 2            ;   1.3%      ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 +----------------------------+-------------+
 
 
@@ -179,8 +199,13 @@ agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
+<<<<<<< HEAD
 ;     -- Requested    ; 0.00 % ( 0 / 206 ) ; 0.00 % ( 0 / 206 )         ; 0.00 % ( 0 / 206 )       ;
 ;     -- Achieved     ; 0.00 % ( 0 / 206 ) ; 0.00 % ( 0 / 206 )         ; 0.00 % ( 0 / 206 )       ;
+=======
+;     -- Requested    ; 0.00 % ( 0 / 263 ) ; 0.00 % ( 0 / 263 )         ; 0.00 % ( 0 / 263 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 263 ) ; 0.00 % ( 0 / 263 )         ; 0.00 % ( 0 / 263 )       ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -203,7 +228,11 @@ agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
+<<<<<<< HEAD
 ; Top                            ; 0.00 % ( 0 / 190 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+=======
+; Top                            ; 0.00 % ( 0 / 247 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 16 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -214,6 +243,7 @@ agreement for further details.
 The pin-out file can be found in C:/Users/Alunos/Documents/D/Projetos/quartus/output_files/DDD.pin.
 
 
+<<<<<<< HEAD
 +---------------------------------------------------------------------+
 ; Fitter Resource Usage Summary                                       ;
 +---------------------------------------------+-----------------------+
@@ -265,10 +295,64 @@ The pin-out file can be found in C:/Users/Alunos/Documents/D/Projetos/quartus/ou
 ; Total fan-out                               ; 393                   ;
 ; Average fan-out                             ; 1.90                  ;
 +---------------------------------------------+-----------------------+
+=======
++----------------------------------------------------------------------+
+; Fitter Resource Usage Summary                                        ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Total logic elements                        ; 103 / 49,760 ( < 1 % ) ;
+;     -- Combinational with no register       ; 54                     ;
+;     -- Register only                        ; 1                      ;
+;     -- Combinational with a register        ; 48                     ;
+;                                             ;                        ;
+; Logic element usage by number of LUT inputs ;                        ;
+;     -- 4 input functions                    ; 38                     ;
+;     -- 3 input functions                    ; 31                     ;
+;     -- <=2 input functions                  ; 33                     ;
+;     -- Register only                        ; 1                      ;
+;                                             ;                        ;
+; Logic elements by mode                      ;                        ;
+;     -- normal mode                          ; 80                     ;
+;     -- arithmetic mode                      ; 22                     ;
+;                                             ;                        ;
+; Total registers*                            ; 49 / 51,509 ( < 1 % )  ;
+;     -- Dedicated logic registers            ; 49 / 49,760 ( < 1 % )  ;
+;     -- I/O registers                        ; 0 / 1,749 ( 0 % )      ;
+;                                             ;                        ;
+; Total LABs:  partially or completely used   ; 10 / 3,110 ( < 1 % )   ;
+; Virtual pins                                ; 0                      ;
+; I/O pins                                    ; 43 / 360 ( 12 % )      ;
+;     -- Clock pins                           ; 1 / 8 ( 13 % )         ;
+;     -- Dedicated input pins                 ; 1 / 1 ( 100 % )        ;
+;                                             ;                        ;
+; M9Ks                                        ; 0 / 182 ( 0 % )        ;
+; UFM blocks                                  ; 0 / 1 ( 0 % )          ;
+; ADC blocks                                  ; 0 / 2 ( 0 % )          ;
+; Total block memory bits                     ; 0 / 1,677,312 ( 0 % )  ;
+; Total block memory implementation bits      ; 0 / 1,677,312 ( 0 % )  ;
+; Embedded Multiplier 9-bit elements          ; 0 / 288 ( 0 % )        ;
+; PLLs                                        ; 0 / 4 ( 0 % )          ;
+; Global signals                              ; 7                      ;
+;     -- Global clocks                        ; 7 / 20 ( 35 % )        ;
+; JTAGs                                       ; 0 / 1 ( 0 % )          ;
+; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
+; Remote update blocks                        ; 0 / 1 ( 0 % )          ;
+; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
+; Impedance control blocks                    ; 0 / 1 ( 0 % )          ;
+; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%     ;
+; Peak interconnect usage (total/H/V)         ; 0.6% / 0.7% / 1.0%     ;
+; Maximum fan-out                             ; 24                     ;
+; Highest non-global fan-out                  ; 17                     ;
+; Total fan-out                               ; 510                    ;
+; Average fan-out                             ; 1.93                   ;
++---------------------------------------------+------------------------+
+>>>>>>> 8be6b77 (VHDL Relogio)
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
 
 
+<<<<<<< HEAD
 +-----------------------------------------------------------------------------------------------------+
 ; Fitter Partition Statistics                                                                         ;
 +---------------------------------------------+----------------------+--------------------------------+
@@ -339,6 +423,78 @@ The pin-out file can be found in C:/Users/Alunos/Documents/D/Projetos/quartus/ou
 ;     -- Input Ports with no Fanout           ; 0                    ; 0                              ;
 ;     -- Output Ports with no Fanout          ; 0                    ; 0                              ;
 +---------------------------------------------+----------------------+--------------------------------+
+=======
++------------------------------------------------------------------------------------------------------+
+; Fitter Partition Statistics                                                                          ;
++---------------------------------------------+-----------------------+--------------------------------+
+; Statistic                                   ; Top                   ; hard_block:auto_generated_inst ;
++---------------------------------------------+-----------------------+--------------------------------+
+; Difficulty Clustering Region                ; Low                   ; Low                            ;
+;                                             ;                       ;                                ;
+; Total logic elements                        ; 103 / 49760 ( < 1 % ) ; 0 / 49760 ( 0 % )              ;
+;     -- Combinational with no register       ; 54                    ; 0                              ;
+;     -- Register only                        ; 1                     ; 0                              ;
+;     -- Combinational with a register        ; 48                    ; 0                              ;
+;                                             ;                       ;                                ;
+; Logic element usage by number of LUT inputs ;                       ;                                ;
+;     -- 4 input functions                    ; 38                    ; 0                              ;
+;     -- 3 input functions                    ; 31                    ; 0                              ;
+;     -- <=2 input functions                  ; 33                    ; 0                              ;
+;     -- Register only                        ; 1                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Logic elements by mode                      ;                       ;                                ;
+;     -- normal mode                          ; 80                    ; 0                              ;
+;     -- arithmetic mode                      ; 22                    ; 0                              ;
+;                                             ;                       ;                                ;
+; Total registers                             ; 49                    ; 0                              ;
+;     -- Dedicated logic registers            ; 49 / 49760 ( < 1 % )  ; 0 / 49760 ( 0 % )              ;
+;     -- I/O registers                        ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Total LABs:  partially or completely used   ; 10 / 3110 ( < 1 % )   ; 0 / 3110 ( 0 % )               ;
+;                                             ;                       ;                                ;
+; Virtual pins                                ; 0                     ; 0                              ;
+; I/O pins                                    ; 43                    ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0 / 288 ( 0 % )       ; 0 / 288 ( 0 % )                ;
+; Total memory bits                           ; 0                     ; 0                              ;
+; Total RAM block bits                        ; 0                     ; 0                              ;
+; Clock control block                         ; 7 / 24 ( 29 % )       ; 0 / 24 ( 0 % )                 ;
+; User Flash Memory                           ; 1 / 1 ( 100 % )       ; 0 / 1 ( 0 % )                  ;
+; Analog-to-Digital Converter                 ; 2 / 2 ( 100 % )       ; 0 / 2 ( 0 % )                  ;
+;                                             ;                       ;                                ;
+; Connections                                 ;                       ;                                ;
+;     -- Input Connections                    ; 0                     ; 0                              ;
+;     -- Registered Input Connections         ; 0                     ; 0                              ;
+;     -- Output Connections                   ; 0                     ; 0                              ;
+;     -- Registered Output Connections        ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Internal Connections                        ;                       ;                                ;
+;     -- Total Connections                    ; 516                   ; 8                              ;
+;     -- Registered Connections               ; 259                   ; 0                              ;
+;                                             ;                       ;                                ;
+; External Connections                        ;                       ;                                ;
+;     -- Top                                  ; 0                     ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Partition Interface                         ;                       ;                                ;
+;     -- Input Ports                          ; 1                     ; 0                              ;
+;     -- Output Ports                         ; 42                    ; 0                              ;
+;     -- Bidir Ports                          ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Registered Ports                            ;                       ;                                ;
+;     -- Registered Input Ports               ; 0                     ; 0                              ;
+;     -- Registered Output Ports              ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Port Connectivity                           ;                       ;                                ;
+;     -- Input Ports driven by GND            ; 0                     ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                     ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                     ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                     ; 0                              ;
+;     -- Input Ports with no Source           ; 0                     ; 0                              ;
+;     -- Output Ports with no Source          ; 0                     ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                     ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0                     ; 0                              ;
++---------------------------------------------+-----------------------+--------------------------------+
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -383,6 +539,23 @@ The pin-out file can be found in C:/Users/Alunos/Documents/D/Projetos/quartus/ou
 ; DISPLAY_3[4] ; E21   ; 6        ; 78           ; 33           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; DISPLAY_3[5] ; E22   ; 6        ; 78           ; 33           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; DISPLAY_3[6] ; F21   ; 6        ; 78           ; 35           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+<<<<<<< HEAD
+=======
+; DISPLAY_4[0] ; F20   ; 6        ; 78           ; 35           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; DISPLAY_4[1] ; F19   ; 6        ; 78           ; 40           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; DISPLAY_4[2] ; H19   ; 6        ; 78           ; 45           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; DISPLAY_4[3] ; J18   ; 6        ; 78           ; 42           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; DISPLAY_4[4] ; E19   ; 6        ; 78           ; 40           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; DISPLAY_4[5] ; E20   ; 6        ; 78           ; 40           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; DISPLAY_4[6] ; F18   ; 6        ; 78           ; 40           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; DISPLAY_5[0] ; N20   ; 6        ; 78           ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; DISPLAY_5[1] ; N19   ; 6        ; 78           ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; DISPLAY_5[2] ; M20   ; 6        ; 78           ; 34           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; DISPLAY_5[3] ; N18   ; 6        ; 78           ; 34           ; 22           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; DISPLAY_5[4] ; L18   ; 6        ; 78           ; 37           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; DISPLAY_5[5] ; K20   ; 6        ; 78           ; 42           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; DISPLAY_5[6] ; J20   ; 6        ; 78           ; 45           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 +--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -413,7 +586,11 @@ The pin-out file can be found in C:/Users/Alunos/Documents/D/Projetos/quartus/ou
 ; 3        ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ;
 ; 4        ; 0 / 48 ( 0 % )   ; 2.5V          ; --           ;
 ; 5        ; 0 / 40 ( 0 % )   ; 2.5V          ; --           ;
+<<<<<<< HEAD
 ; 6        ; 13 / 60 ( 22 % ) ; 2.5V          ; --           ;
+=======
+; 6        ; 27 / 60 ( 45 % ) ; 2.5V          ; --           ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; 7        ; 15 / 52 ( 29 % ) ; 2.5V          ; --           ;
 ; 8        ; 4 / 36 ( 11 % )  ; 2.5V          ; --           ;
 +----------+------------------+---------------+--------------+
@@ -574,8 +751,13 @@ The pin-out file can be found in C:/Users/Alunos/Documents/D/Projetos/quartus/ou
 ; E16      ; 388        ; 7        ; DISPLAY_0[2]                                   ; output ; 2.5 V                 ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; E17      ; 366        ; 6        ; DISPLAY_3[0]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; E18      ; 387        ; 6        ; DISPLAY_1[4]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
+<<<<<<< HEAD
 ; E19      ; 352        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; E20      ; 355        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+=======
+; E19      ; 352        ; 6        ; DISPLAY_4[4]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; E20      ; 355        ; 6        ; DISPLAY_4[5]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; E21      ; 335        ; 6        ; DISPLAY_3[4]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; E22      ; 333        ; 6        ; DISPLAY_3[5]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; F1       ; 47         ; 1B       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -595,9 +777,15 @@ The pin-out file can be found in C:/Users/Alunos/Documents/D/Projetos/quartus/ou
 ; F15      ; 398        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; F16      ; 396        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Column I/O ;                 ; no       ; On           ;
 ; F17      ; 364        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+<<<<<<< HEAD
 ; F18      ; 354        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F19      ; 353        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F20      ; 342        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+=======
+; F18      ; 354        ; 6        ; DISPLAY_4[6]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; F19      ; 353        ; 6        ; DISPLAY_4[1]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; F20      ; 342        ; 6        ; DISPLAY_4[0]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; F21      ; 340        ; 6        ; DISPLAY_3[6]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; F22      ; 331        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; G1       ; 45         ; 1B       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -640,7 +828,11 @@ The pin-out file can be found in C:/Users/Alunos/Documents/D/Projetos/quartus/ou
 ; H16      ;            ; 6        ; VCCIO6                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; H17      ; 384        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H18      ; 374        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+<<<<<<< HEAD
 ; H19      ; 372        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+=======
+; H19      ; 372        ; 6        ; DISPLAY_4[2]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; H20      ; 375        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H21      ; 323        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; H22      ; 321        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -661,9 +853,15 @@ The pin-out file can be found in C:/Users/Alunos/Documents/D/Projetos/quartus/ou
 ; J15      ; 370        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J16      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; J17      ;            ; 6        ; VCCIO6                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; J18      ; 362        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J19      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
 ; J20      ; 373        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+=======
+; J18      ; 362        ; 6        ; DISPLAY_4[3]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; J19      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
+; J20      ; 373        ; 6        ; DISPLAY_5[6]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; J21      ; 327        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; J22      ; 325        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K1       ; 49         ; 1B       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -685,7 +883,11 @@ The pin-out file can be found in C:/Users/Alunos/Documents/D/Projetos/quartus/ou
 ; K17      ;            ; 6        ; VCCIO6                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; K18      ; 360        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K19      ; 361        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+<<<<<<< HEAD
 ; K20      ; 363        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+=======
+; K20      ; 363        ; 6        ; DISPLAY_5[5]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; K21      ; 326        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; K22      ; 324        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L1       ; 51         ; 1B       ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -705,7 +907,11 @@ The pin-out file can be found in C:/Users/Alunos/Documents/D/Projetos/quartus/ou
 ; L15      ; 346        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L16      ;            ; 6        ; VCCIO6                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; L17      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; L18      ; 350        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+=======
+; L18      ; 350        ; 6        ; DISPLAY_5[4]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; L19      ; 349        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L20      ; 351        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; L21      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
@@ -729,7 +935,11 @@ The pin-out file can be found in C:/Users/Alunos/Documents/D/Projetos/quartus/ou
 ; M17      ;            ; 6        ; VCCIO6                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; M18      ; 348        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M19      ;            ;          ; GND                                            ; gnd    ;                       ;         ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; M20      ; 337        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+=======
+; M20      ; 337        ; 6        ; DISPLAY_5[2]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; M21      ; 312        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; M22      ; 315        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N1       ; 87         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -749,9 +959,15 @@ The pin-out file can be found in C:/Users/Alunos/Documents/D/Projetos/quartus/ou
 ; N15      ; 322        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N16      ;            ; 5        ; VCCIO5                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; N17      ;            ; 6        ; VCCIO6                                         ; power  ;                       ; 2.5V    ; --         ;                 ; --       ; --           ;
+<<<<<<< HEAD
 ; N18      ; 336        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N19      ; 338        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N20      ; 339        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
+=======
+; N18      ; 336        ; 6        ; DISPLAY_5[3]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; N19      ; 338        ; 6        ; DISPLAY_5[1]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; N20      ; 339        ; 6        ; DISPLAY_5[0]                                   ; output ; 2.5 V                 ;         ; Row I/O    ; Y               ; no       ; Off          ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; N21      ; 313        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N22      ; 307        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P1       ; 85         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                ;        ;                       ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -945,10 +1161,28 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; DISPLAY_3[4] ; Incomplete set of assignments ;
 ; DISPLAY_3[5] ; Incomplete set of assignments ;
 ; DISPLAY_3[6] ; Incomplete set of assignments ;
+<<<<<<< HEAD
+=======
+; DISPLAY_4[0] ; Incomplete set of assignments ;
+; DISPLAY_4[1] ; Incomplete set of assignments ;
+; DISPLAY_4[2] ; Incomplete set of assignments ;
+; DISPLAY_4[3] ; Incomplete set of assignments ;
+; DISPLAY_4[4] ; Incomplete set of assignments ;
+; DISPLAY_4[5] ; Incomplete set of assignments ;
+; DISPLAY_4[6] ; Incomplete set of assignments ;
+; DISPLAY_5[0] ; Incomplete set of assignments ;
+; DISPLAY_5[1] ; Incomplete set of assignments ;
+; DISPLAY_5[2] ; Incomplete set of assignments ;
+; DISPLAY_5[3] ; Incomplete set of assignments ;
+; DISPLAY_5[4] ; Incomplete set of assignments ;
+; DISPLAY_5[5] ; Incomplete set of assignments ;
+; DISPLAY_5[6] ; Incomplete set of assignments ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; CLK          ; Incomplete set of assignments ;
 +--------------+-------------------------------+
 
 
+<<<<<<< HEAD
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                     ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-----------------------------------+-----------------+--------------+
@@ -965,6 +1199,29 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;    |DECODIFICADOR_9:CHIP7| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |Cronometro|DECODIFICADOR_9:CHIP7 ; DECODIFICADOR_9 ; work         ;
 ;    |DIV_CLK:CHIP1|         ; 40 (40)     ; 24 (24)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 16 (16)      ; 1 (1)             ; 23 (23)          ; 0          ; |Cronometro|DIV_CLK:CHIP1         ; DIV_CLK         ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+-----------------------------------+-----------------+--------------+
+=======
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                       ;
++-----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node  ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; ADC blocks ; Full Hierarchy Name                ; Entity Name     ; Library Name ;
++-----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+------------------------------------+-----------------+--------------+
+; |Cronometro                 ; 103 (1)     ; 49 (0)                    ; 0 (0)         ; 0           ; 0    ; 1          ; 0            ; 0       ; 0         ; 43   ; 0            ; 54 (1)       ; 1 (0)             ; 48 (0)           ; 0          ; |Cronometro                        ; Cronometro      ; work         ;
+;    |COUNT_2:CHIP12|         ; 2 (2)       ; 2 (2)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0          ; |Cronometro|COUNT_2:CHIP12         ; COUNT_2         ; work         ;
+;    |COUNT_5:CHIP4|          ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0          ; |Cronometro|COUNT_5:CHIP4          ; COUNT_5         ; work         ;
+;    |COUNT_5:CHIP8|          ; 4 (4)       ; 4 (4)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0          ; |Cronometro|COUNT_5:CHIP8          ; COUNT_5         ; work         ;
+;    |COUNT_9:CHIP10|         ; 5 (5)       ; 5 (5)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (5)            ; 0          ; |Cronometro|COUNT_9:CHIP10         ; COUNT_9         ; work         ;
+;    |COUNT_9:CHIP2|          ; 5 (5)       ; 5 (5)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (5)            ; 0          ; |Cronometro|COUNT_9:CHIP2          ; COUNT_9         ; work         ;
+;    |COUNT_9:CHIP6|          ; 5 (5)       ; 5 (5)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 5 (5)            ; 0          ; |Cronometro|COUNT_9:CHIP6          ; COUNT_9         ; work         ;
+;    |DECODIFICADOR_9:CHIP11| ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |Cronometro|DECODIFICADOR_9:CHIP11 ; DECODIFICADOR_9 ; work         ;
+;    |DECODIFICADOR_9:CHIP13| ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 1 (1)            ; 0          ; |Cronometro|DECODIFICADOR_9:CHIP13 ; DECODIFICADOR_9 ; work         ;
+;    |DECODIFICADOR_9:CHIP3|  ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |Cronometro|DECODIFICADOR_9:CHIP3  ; DECODIFICADOR_9 ; work         ;
+;    |DECODIFICADOR_9:CHIP5|  ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |Cronometro|DECODIFICADOR_9:CHIP5  ; DECODIFICADOR_9 ; work         ;
+;    |DECODIFICADOR_9:CHIP7|  ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |Cronometro|DECODIFICADOR_9:CHIP7  ; DECODIFICADOR_9 ; work         ;
+;    |DECODIFICADOR_9:CHIP9|  ; 7 (7)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0          ; |Cronometro|DECODIFICADOR_9:CHIP9  ; DECODIFICADOR_9 ; work         ;
+;    |DIV_CLK:CHIP1|          ; 39 (39)     ; 24 (24)                   ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 15 (15)      ; 1 (1)             ; 23 (23)          ; 0          ; |Cronometro|DIV_CLK:CHIP1          ; DIV_CLK         ; work         ;
+;    |VERIFICADOR:CHIP14|     ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0          ; |Cronometro|VERIFICADOR:CHIP14     ; VERIFICADOR     ; work         ;
++-----------------------------+-------------+---------------------------+---------------+-------------+------+------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------+------------------------------------+-----------------+--------------+
+>>>>>>> 8be6b77 (VHDL Relogio)
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1001,6 +1258,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DISPLAY_3[4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; DISPLAY_3[5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; DISPLAY_3[6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+<<<<<<< HEAD
+=======
+; DISPLAY_4[0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DISPLAY_4[1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DISPLAY_4[2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DISPLAY_4[3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DISPLAY_4[4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DISPLAY_4[5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DISPLAY_4[6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DISPLAY_5[0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DISPLAY_5[1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DISPLAY_5[2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DISPLAY_5[3] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DISPLAY_5[4] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DISPLAY_5[5] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; DISPLAY_5[6] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; CLK          ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 +--------------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -1014,6 +1288,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 
 
+<<<<<<< HEAD
 +-----------------------------------------------------------------------------------------------------------------------------------+
 ; Control Signals                                                                                                                   ;
 +-----------------+----------------+---------+-------+--------+----------------------+------------------+---------------------------+
@@ -1172,6 +1447,176 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 17                                          ; 0                           ;
 ; 18                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
+=======
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                      ;
++--------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                     ; Location          ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; CLK                      ; PIN_N5            ; 24      ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; COUNT_5:CHIP4|X          ; FF_X45_Y53_N19    ; 5       ; Clock        ; yes    ; Global Clock         ; GCLK14           ; --                        ;
+; COUNT_5:CHIP8|X          ; FF_X76_Y39_N27    ; 5       ; Clock        ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; COUNT_9:CHIP10|X         ; FF_X77_Y38_N23    ; 2       ; Clock        ; yes    ; Global Clock         ; GCLK8            ; --                        ;
+; COUNT_9:CHIP2|X          ; FF_X74_Y50_N9     ; 4       ; Clock        ; yes    ; Global Clock         ; GCLK9            ; --                        ;
+; COUNT_9:CHIP6|X          ; FF_X77_Y39_N11    ; 4       ; Clock        ; yes    ; Global Clock         ; GCLK7            ; --                        ;
+; DIV_CLK:CHIP1|X          ; FF_X43_Y1_N21     ; 5       ; Clock        ; yes    ; Global Clock         ; GCLK16           ; --                        ;
+; VERIFICADOR:CHIP14|RESDH ; LCCOMB_X77_Y38_N4 ; 7       ; Async. clear ; no     ; --                   ; --               ; --                        ;
++--------------------------+-------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Global & Other Fast Signals                                                                                                                              ;
++------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; Name             ; Location       ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+; CLK              ; PIN_N5         ; 24      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
+; COUNT_5:CHIP4|X  ; FF_X45_Y53_N19 ; 5       ; 0                                    ; Global Clock         ; GCLK14           ; --                        ;
+; COUNT_5:CHIP8|X  ; FF_X76_Y39_N27 ; 5       ; 0                                    ; Global Clock         ; GCLK6            ; --                        ;
+; COUNT_9:CHIP10|X ; FF_X77_Y38_N23 ; 2       ; 0                                    ; Global Clock         ; GCLK8            ; --                        ;
+; COUNT_9:CHIP2|X  ; FF_X74_Y50_N9  ; 4       ; 0                                    ; Global Clock         ; GCLK9            ; --                        ;
+; COUNT_9:CHIP6|X  ; FF_X77_Y39_N11 ; 4       ; 0                                    ; Global Clock         ; GCLK7            ; --                        ;
+; DIV_CLK:CHIP1|X  ; FF_X43_Y1_N21  ; 5       ; 0                                    ; Global Clock         ; GCLK16           ; --                        ;
++------------------+----------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
+
+
++-------------------------------------------------+
+; Routing Usage Summary                           ;
++-----------------------+-------------------------+
+; Routing Resource Type ; Usage                   ;
++-----------------------+-------------------------+
+; Block interconnects   ; 106 / 148,641 ( < 1 % ) ;
+; C16 interconnects     ; 6 / 5,382 ( < 1 % )     ;
+; C4 interconnects      ; 70 / 106,704 ( < 1 % )  ;
+; Direct links          ; 25 / 148,641 ( < 1 % )  ;
+; Global clocks         ; 7 / 20 ( 35 % )         ;
+; Local interconnects   ; 56 / 49,760 ( < 1 % )   ;
+; NSLEEPs               ; 0 / 500 ( 0 % )         ;
+; R24 interconnects     ; 10 / 5,406 ( < 1 % )    ;
+; R4 interconnects      ; 80 / 147,764 ( < 1 % )  ;
++-----------------------+-------------------------+
+
+
++----------------------------------------------------------------------------+
+; LAB Logic Elements                                                         ;
++---------------------------------------------+------------------------------+
+; Number of Logic Elements  (Average = 10.30) ; Number of LABs  (Total = 10) ;
++---------------------------------------------+------------------------------+
+; 1                                           ; 2                            ;
+; 2                                           ; 0                            ;
+; 3                                           ; 0                            ;
+; 4                                           ; 0                            ;
+; 5                                           ; 0                            ;
+; 6                                           ; 0                            ;
+; 7                                           ; 1                            ;
+; 8                                           ; 1                            ;
+; 9                                           ; 0                            ;
+; 10                                          ; 0                            ;
+; 11                                          ; 1                            ;
+; 12                                          ; 1                            ;
+; 13                                          ; 0                            ;
+; 14                                          ; 0                            ;
+; 15                                          ; 1                            ;
+; 16                                          ; 3                            ;
++---------------------------------------------+------------------------------+
+
+
++-------------------------------------------------------------------+
+; LAB-wide Signals                                                  ;
++------------------------------------+------------------------------+
+; LAB-wide Signals  (Average = 0.80) ; Number of LABs  (Total = 10) ;
++------------------------------------+------------------------------+
+; 1 Clock                            ; 7                            ;
+; 2 Clocks                           ; 1                            ;
++------------------------------------+------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; LAB Signals Sourced                                                         ;
++----------------------------------------------+------------------------------+
+; Number of Signals Sourced  (Average = 15.20) ; Number of LABs  (Total = 10) ;
++----------------------------------------------+------------------------------+
+; 0                                            ; 0                            ;
+; 1                                            ; 2                            ;
+; 2                                            ; 0                            ;
+; 3                                            ; 0                            ;
+; 4                                            ; 0                            ;
+; 5                                            ; 0                            ;
+; 6                                            ; 0                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 0                            ;
+; 9                                            ; 0                            ;
+; 10                                           ; 1                            ;
+; 11                                           ; 1                            ;
+; 12                                           ; 0                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 0                            ;
+; 15                                           ; 1                            ;
+; 16                                           ; 0                            ;
+; 17                                           ; 1                            ;
+; 18                                           ; 0                            ;
+; 19                                           ; 0                            ;
+; 20                                           ; 0                            ;
+; 21                                           ; 1                            ;
+; 22                                           ; 0                            ;
+; 23                                           ; 1                            ;
+; 24                                           ; 0                            ;
+; 25                                           ; 0                            ;
+; 26                                           ; 1                            ;
+; 27                                           ; 1                            ;
++----------------------------------------------+------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                        ;
++-------------------------------------------------+------------------------------+
+; Number of Signals Sourced Out  (Average = 7.40) ; Number of LABs  (Total = 10) ;
++-------------------------------------------------+------------------------------+
+; 0                                               ; 0                            ;
+; 1                                               ; 2                            ;
+; 2                                               ; 0                            ;
+; 3                                               ; 0                            ;
+; 4                                               ; 1                            ;
+; 5                                               ; 1                            ;
+; 6                                               ; 0                            ;
+; 7                                               ; 1                            ;
+; 8                                               ; 2                            ;
+; 9                                               ; 0                            ;
+; 10                                              ; 0                            ;
+; 11                                              ; 0                            ;
+; 12                                              ; 2                            ;
+; 13                                              ; 0                            ;
+; 14                                              ; 0                            ;
+; 15                                              ; 0                            ;
+; 16                                              ; 1                            ;
++-------------------------------------------------+------------------------------+
+
+
++----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                        ;
++---------------------------------------------+------------------------------+
+; Number of Distinct Inputs  (Average = 4.10) ; Number of LABs  (Total = 10) ;
++---------------------------------------------+------------------------------+
+; 0                                           ; 0                            ;
+; 1                                           ; 2                            ;
+; 2                                           ; 2                            ;
+; 3                                           ; 1                            ;
+; 4                                           ; 1                            ;
+; 5                                           ; 2                            ;
+; 6                                           ; 0                            ;
+; 7                                           ; 0                            ;
+; 8                                           ; 0                            ;
+; 9                                           ; 0                            ;
+; 10                                          ; 0                            ;
+; 11                                          ; 0                            ;
+; 12                                          ; 0                            ;
+; 13                                          ; 0                            ;
+; 14                                          ; 0                            ;
+; 15                                          ; 0                            ;
+; 16                                          ; 0                            ;
+; 17                                          ; 0                            ;
+; 18                                          ; 1                            ;
++---------------------------------------------+------------------------------+
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 
 +------------------------------------------+
@@ -1231,9 +1676,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
+<<<<<<< HEAD
 ; Total Pass         ; 29        ; 0            ; 29        ; 0            ; 0            ; 29        ; 29        ; 0            ; 29        ; 29        ; 0            ; 28           ; 0            ; 0            ; 1            ; 0            ; 28           ; 1            ; 0            ; 0            ; 0            ; 28           ; 0            ; 0            ; 0            ; 0            ; 0            ; 29        ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; Total Inapplicable ; 0         ; 29           ; 0         ; 29           ; 29           ; 0         ; 0         ; 29           ; 0         ; 0         ; 29           ; 1            ; 29           ; 29           ; 28           ; 29           ; 1            ; 28           ; 29           ; 29           ; 29           ; 1            ; 29           ; 29           ; 29           ; 29           ; 29           ; 0         ; 29           ; 29           ;
+=======
+; Total Pass         ; 43        ; 0            ; 43        ; 0            ; 0            ; 43        ; 43        ; 0            ; 43        ; 43        ; 0            ; 42           ; 0            ; 0            ; 1            ; 0            ; 42           ; 1            ; 0            ; 0            ; 0            ; 42           ; 0            ; 0            ; 0            ; 0            ; 0            ; 43        ; 0            ; 0            ;
+; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
+; Total Inapplicable ; 0         ; 43           ; 0         ; 43           ; 43           ; 0         ; 0         ; 43           ; 0         ; 0         ; 43           ; 1            ; 43           ; 43           ; 42           ; 43           ; 1            ; 42           ; 43           ; 43           ; 43           ; 1            ; 43           ; 43           ; 43           ; 43           ; 43           ; 0         ; 43           ; 43           ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; DISPLAY_0[0]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; DISPLAY_0[1]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1263,6 +1714,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DISPLAY_3[4]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; DISPLAY_3[5]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; DISPLAY_3[6]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+<<<<<<< HEAD
+=======
+; DISPLAY_4[0]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; DISPLAY_4[1]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; DISPLAY_4[2]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; DISPLAY_4[3]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; DISPLAY_4[4]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; DISPLAY_4[5]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; DISPLAY_4[6]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; DISPLAY_5[0]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; DISPLAY_5[1]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; DISPLAY_5[2]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; DISPLAY_5[3]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; DISPLAY_5[4]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; DISPLAY_5[5]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; DISPLAY_5[6]       ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; CLK                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
@@ -1309,7 +1777,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
+<<<<<<< HEAD
 ; CLK             ; CLK                  ; 5.4               ;
+=======
+; CLK             ; CLK                  ; 5.2               ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
@@ -1320,6 +1792,7 @@ This will disable optimization of problematic paths and expose them for further 
 +---------------------+----------------------+-------------------+
 ; Source Register     ; Destination Register ; Delay Added in ns ;
 +---------------------+----------------------+-------------------+
+<<<<<<< HEAD
 ; DIV_CLK:CHIP1|X     ; DIV_CLK:CHIP1|X      ; 5.393             ;
 ; DIV_CLK:CHIP1|Y[22] ; DIV_CLK:CHIP1|X      ; 2.132             ;
 ; DIV_CLK:CHIP1|Y[20] ; DIV_CLK:CHIP1|X      ; 2.132             ;
@@ -1344,6 +1817,32 @@ This will disable optimization of problematic paths and expose them for further 
 ; DIV_CLK:CHIP1|Y[2]  ; DIV_CLK:CHIP1|X      ; 2.132             ;
 ; DIV_CLK:CHIP1|Y[1]  ; DIV_CLK:CHIP1|X      ; 2.132             ;
 ; DIV_CLK:CHIP1|Y[0]  ; DIV_CLK:CHIP1|X      ; 2.132             ;
+=======
+; DIV_CLK:CHIP1|X     ; DIV_CLK:CHIP1|X      ; 5.241             ;
+; DIV_CLK:CHIP1|Y[21] ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[20] ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[19] ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[18] ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[17] ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[16] ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[9]  ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[10] ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[11] ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[13] ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[15] ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[12] ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[14] ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[8]  ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[7]  ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[6]  ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[22] ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[5]  ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[4]  ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[3]  ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[2]  ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[1]  ; DIV_CLK:CHIP1|X      ; 2.007             ;
+; DIV_CLK:CHIP1|Y[0]  ; DIV_CLK:CHIP1|X      ; 2.007             ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 +---------------------+----------------------+-------------------+
 Note: This table only shows the top 24 path(s) that have the largest delay added for hold.
 
@@ -1389,6 +1888,7 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQue
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (176353): Automatically promoted node CLK~input (placed in PIN N5 (CLK0p, DIFFIO_RX_L28p, DIFFOUT_L28p, High_Speed)) File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 2
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
+<<<<<<< HEAD
 Info (176353): Automatically promoted node COUNT_5:CHIP4|X  File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 138
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176353): Automatically promoted node DIV_CLK:CHIP1|X  File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 84
@@ -1398,37 +1898,73 @@ Info (176353): Automatically promoted node DIV_CLK:CHIP1|X  File: C:/Users/Aluno
 Info (176353): Automatically promoted node COUNT_9:CHIP2|X  File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 109
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176353): Automatically promoted node COUNT_9:CHIP6|X  File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 109
+=======
+Info (176353): Automatically promoted node COUNT_5:CHIP4|X  File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 183
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+Info (176353): Automatically promoted node COUNT_5:CHIP8|X  File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 183
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+Info (176353): Automatically promoted node DIV_CLK:CHIP1|X  File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 129
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node DIV_CLK:CHIP1|X~0 File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 129
+Info (176353): Automatically promoted node COUNT_9:CHIP2|X  File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 154
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+Info (176353): Automatically promoted node COUNT_9:CHIP6|X  File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 154
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+Info (176353): Automatically promoted node COUNT_9:CHIP10|X  File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 154
+>>>>>>> 8be6b77 (VHDL Relogio)
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "OUT_CLK" is assigned to location or region, but does not exist in design
+<<<<<<< HEAD
 Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+=======
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+>>>>>>> 8be6b77 (VHDL Relogio)
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
+<<<<<<< HEAD
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
+=======
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
+>>>>>>> 8be6b77 (VHDL Relogio)
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X67_Y44 to location X78_Y54
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+<<<<<<< HEAD
 Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
+=======
+Info (11888): Total time spent on timing analysis during the Fitter is 0.19 seconds.
+>>>>>>> 8be6b77 (VHDL Relogio)
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
+<<<<<<< HEAD
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+=======
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+>>>>>>> 8be6b77 (VHDL Relogio)
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/Alunos/Documents/D/Projetos/quartus/output_files/DDD.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 5368 megabytes
+<<<<<<< HEAD
     Info: Processing ended: Fri Dec 05 14:25:57 2025
     Info: Elapsed time: 00:00:10
+=======
+    Info: Processing ended: Fri Dec 19 15:48:11 2025
+    Info: Elapsed time: 00:00:12
+>>>>>>> 8be6b77 (VHDL Relogio)
     Info: Total CPU time (on all processors): 00:00:14
 
 

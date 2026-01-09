@@ -1,5 +1,9 @@
 Analysis & Synthesis report for DDD
+<<<<<<< HEAD
 Fri Dec 05 14:25:46 2025
+=======
+Fri Dec 19 15:47:58 2025
+>>>>>>> 8be6b77 (VHDL Relogio)
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -14,6 +18,7 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
+<<<<<<< HEAD
   9. Port Connectivity Checks: "COUNT_5:CHIP8"
  10. Port Connectivity Checks: "COUNT_9:CHIP6"
  11. Port Connectivity Checks: "COUNT_5:CHIP4"
@@ -21,6 +26,20 @@ Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
  13. Post-Synthesis Netlist Statistics for Top Partition
  14. Elapsed Time Per Partition
  15. Analysis & Synthesis Messages
+=======
+  9. Port Connectivity Checks: "VERIFICADOR:CHIP14"
+ 10. Port Connectivity Checks: "DECODIFICADOR_9:CHIP13"
+ 11. Port Connectivity Checks: "COUNT_2:CHIP12"
+ 12. Port Connectivity Checks: "DECODIFICADOR_9:CHIP9"
+ 13. Port Connectivity Checks: "COUNT_5:CHIP8"
+ 14. Port Connectivity Checks: "COUNT_9:CHIP6"
+ 15. Port Connectivity Checks: "DECODIFICADOR_9:CHIP5"
+ 16. Port Connectivity Checks: "COUNT_5:CHIP4"
+ 17. Port Connectivity Checks: "COUNT_9:CHIP2"
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 
 
@@ -47,16 +66,28 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis Status        ; Successful - Fri Dec 05 14:25:46 2025       ;
+=======
+; Analysis & Synthesis Status        ; Successful - Fri Dec 19 15:47:58 2025       ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; DDD                                         ;
 ; Top-level Entity Name              ; Cronometro                                  ;
 ; Family                             ; MAX 10                                      ;
+<<<<<<< HEAD
 ; Total logic elements               ; 82                                          ;
 ;     Total combinational functions  ; 82                                          ;
 ;     Dedicated logic registers      ; 41                                          ;
 ; Total registers                    ; 41                                          ;
 ; Total pins                         ; 29                                          ;
+=======
+; Total logic elements               ; 101                                         ;
+;     Total combinational functions  ; 101                                         ;
+;     Dedicated logic registers      ; 49                                          ;
+; Total registers                    ; 49                                          ;
+; Total pins                         ; 43                                          ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -183,6 +214,7 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
+<<<<<<< HEAD
 ; Estimated Total logic elements              ; 82        ;
 ;                                             ;           ;
 ; Total combinational functions               ; 82        ;
@@ -200,16 +232,40 @@ agreement for further details.
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 29        ;
+=======
+; Estimated Total logic elements              ; 101       ;
+;                                             ;           ;
+; Total combinational functions               ; 101       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 38        ;
+;     -- 3 input functions                    ; 31        ;
+;     -- <=2 input functions                  ; 32        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 79        ;
+;     -- arithmetic mode                      ; 22        ;
+;                                             ;           ;
+; Total registers                             ; 49        ;
+;     -- Dedicated logic registers            ; 49        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 43        ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; CLK~input ;
 ; Maximum fan-out                             ; 24        ;
+<<<<<<< HEAD
 ; Total fan-out                               ; 376       ;
+=======
+; Total fan-out                               ; 491       ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; Average fan-out                             ; 2.08      ;
 +---------------------------------------------+-----------+
 
 
+<<<<<<< HEAD
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                  ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------+-----------------+--------------+
@@ -226,6 +282,29 @@ agreement for further details.
 ;    |DECODIFICADOR_9:CHIP7| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|DECODIFICADOR_9:CHIP7 ; DECODIFICADOR_9 ; work         ;
 ;    |DIV_CLK:CHIP1|         ; 39 (39)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|DIV_CLK:CHIP1         ; DIV_CLK         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------+-----------------+--------------+
+=======
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                    ;
++-----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                ; Entity Name     ; Library Name ;
++-----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------+-----------------+--------------+
+; |Cronometro                 ; 101 (0)             ; 49 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 43   ; 0            ; 0          ; |Cronometro                        ; Cronometro      ; work         ;
+;    |COUNT_2:CHIP12|         ; 1 (1)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|COUNT_2:CHIP12         ; COUNT_2         ; work         ;
+;    |COUNT_5:CHIP4|          ; 4 (4)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|COUNT_5:CHIP4          ; COUNT_5         ; work         ;
+;    |COUNT_5:CHIP8|          ; 4 (4)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|COUNT_5:CHIP8          ; COUNT_5         ; work         ;
+;    |COUNT_9:CHIP10|         ; 5 (5)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|COUNT_9:CHIP10         ; COUNT_9         ; work         ;
+;    |COUNT_9:CHIP2|          ; 5 (5)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|COUNT_9:CHIP2          ; COUNT_9         ; work         ;
+;    |COUNT_9:CHIP6|          ; 5 (5)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|COUNT_9:CHIP6          ; COUNT_9         ; work         ;
+;    |DECODIFICADOR_9:CHIP11| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|DECODIFICADOR_9:CHIP11 ; DECODIFICADOR_9 ; work         ;
+;    |DECODIFICADOR_9:CHIP13| ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|DECODIFICADOR_9:CHIP13 ; DECODIFICADOR_9 ; work         ;
+;    |DECODIFICADOR_9:CHIP3|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|DECODIFICADOR_9:CHIP3  ; DECODIFICADOR_9 ; work         ;
+;    |DECODIFICADOR_9:CHIP5|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|DECODIFICADOR_9:CHIP5  ; DECODIFICADOR_9 ; work         ;
+;    |DECODIFICADOR_9:CHIP7|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|DECODIFICADOR_9:CHIP7  ; DECODIFICADOR_9 ; work         ;
+;    |DECODIFICADOR_9:CHIP9|  ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|DECODIFICADOR_9:CHIP9  ; DECODIFICADOR_9 ; work         ;
+;    |DIV_CLK:CHIP1|          ; 38 (38)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|DIV_CLK:CHIP1          ; DIV_CLK         ; work         ;
+;    |VERIFICADOR:CHIP14|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Cronometro|VERIFICADOR:CHIP14     ; VERIFICADOR     ; work         ;
++-----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------+-----------------+--------------+
+>>>>>>> 8be6b77 (VHDL Relogio)
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -234,16 +313,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
+<<<<<<< HEAD
 ; Total registers                              ; 41    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
+=======
+; Total registers                              ; 49    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 7     ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
+<<<<<<< HEAD
 +-----------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "COUNT_5:CHIP8"                                                                       ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
@@ -252,6 +339,51 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; reset ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; cout  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-------+--------+----------+-------------------------------------------------------------------------------------+
+=======
++------------------------------------------------+
+; Port Connectivity Checks: "VERIFICADOR:CHIP14" ;
++--------------+-------+----------+--------------+
+; Port         ; Type  ; Severity ; Details      ;
++--------------+-------+----------+--------------+
+; dhcont[3..2] ; Input ; Info     ; Stuck at GND ;
++--------------+-------+----------+--------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "DECODIFICADOR_9:CHIP13" ;
++---------------+-------+----------+-----------------+
+; Port          ; Type  ; Severity ; Details         ;
++---------------+-------+----------+-----------------+
+; in_deck[3..2] ; Input ; Info     ; Stuck at GND    ;
++---------------+-------+----------+-----------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "COUNT_2:CHIP12"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "DECODIFICADOR_9:CHIP9" ;
++------------+-------+----------+-------------------+
+; Port       ; Type  ; Severity ; Details           ;
++------------+-------+----------+-------------------+
+; in_deck[3] ; Input ; Info     ; Stuck at GND      ;
++------------+-------+----------+-------------------+
+
+
++-------------------------------------------+
+; Port Connectivity Checks: "COUNT_5:CHIP8" ;
++-------+-------+----------+----------------+
+; Port  ; Type  ; Severity ; Details        ;
++-------+-------+----------+----------------+
+; reset ; Input ; Info     ; Stuck at GND   ;
++-------+-------+----------+----------------+
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 
 +-------------------------------------------+
@@ -263,6 +395,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+-------+----------+----------------+
 
 
+<<<<<<< HEAD
+=======
++---------------------------------------------------+
+; Port Connectivity Checks: "DECODIFICADOR_9:CHIP5" ;
++------------+-------+----------+-------------------+
+; Port       ; Type  ; Severity ; Details           ;
++------------+-------+----------+-------------------+
+; in_deck[3] ; Input ; Info     ; Stuck at GND      ;
++------------+-------+----------+-------------------+
+
+
+>>>>>>> 8be6b77 (VHDL Relogio)
 +-------------------------------------------+
 ; Port Connectivity Checks: "COUNT_5:CHIP4" ;
 +-------+-------+----------+----------------+
@@ -286,6 +430,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
+<<<<<<< HEAD
 ; boundary_port         ; 29                          ;
 ; cycloneiii_ff         ; 41                          ;
 ;     plain             ; 41                          ;
@@ -300,6 +445,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                       ;                             ;
 ; Max LUT depth         ; 4.20                        ;
 ; Average LUT depth     ; 2.40                        ;
+=======
+; boundary_port         ; 43                          ;
+; cycloneiii_ff         ; 49                          ;
+;     CLR               ; 7                           ;
+;     plain             ; 42                          ;
+; cycloneiii_lcell_comb ; 108                         ;
+;     arith             ; 22                          ;
+;         2 data inputs ; 22                          ;
+;     normal            ; 86                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 31                          ;
+;         4 data inputs ; 38                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.80                        ;
+; Average LUT depth     ; 2.09                        ;
+>>>>>>> 8be6b77 (VHDL Relogio)
 +-----------------------+-----------------------------+
 
 
@@ -318,7 +481,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+<<<<<<< HEAD
     Info: Processing started: Fri Dec 05 14:25:31 2025
+=======
+    Info: Processing started: Fri Dec 19 15:47:44 2025
+>>>>>>> 8be6b77 (VHDL Relogio)
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DDD -c DDD
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -343,6 +510,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file contado
 Info (12021): Found 2 design units, including 1 entities, in source file count_0a5.vhd
     Info (12022): Found design unit 1: count_0a5-one File: C:/Users/Alunos/Documents/D/Projetos/quartus/count_0a5.vhd Line: 7
     Info (12023): Found entity 1: count_0a5 File: C:/Users/Alunos/Documents/D/Projetos/quartus/count_0a5.vhd Line: 1
+<<<<<<< HEAD
 Info (12021): Found 14 design units, including 7 entities, in source file cronometro.vhd
     Info (12022): Found design unit 1: Cronometro-one File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 9
     Info (12022): Found design unit 2: DIV_CLK-one File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 78
@@ -378,5 +546,50 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
     Info: Processing ended: Fri Dec 05 14:25:46 2025
     Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:31
+=======
+Info (12021): Found 18 design units, including 9 entities, in source file cronometro.vhd
+    Info (12022): Found design unit 1: Cronometro-one File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 11
+    Info (12022): Found design unit 2: VERIFICADOR-one File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 99
+    Info (12022): Found design unit 3: DIV_CLK-one File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 123
+    Info (12022): Found design unit 4: COUNT_9-one File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 148
+    Info (12022): Found design unit 5: COUNT_5-one File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 177
+    Info (12022): Found design unit 6: COUNT_2-one File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 206
+    Info (12022): Found design unit 7: DECODIFICADOR_9-one File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 235
+    Info (12022): Found design unit 8: DECODIFICADOR_5-one File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 257
+    Info (12022): Found design unit 9: DECODIFICADOR_2-one File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 275
+    Info (12023): Found entity 1: Cronometro File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 1
+    Info (12023): Found entity 2: VERIFICADOR File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 93
+    Info (12023): Found entity 3: DIV_CLK File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 118
+    Info (12023): Found entity 4: COUNT_9 File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 142
+    Info (12023): Found entity 5: COUNT_5 File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 171
+    Info (12023): Found entity 6: COUNT_2 File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 200
+    Info (12023): Found entity 7: DECODIFICADOR_9 File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 230
+    Info (12023): Found entity 8: DECODIFICADOR_5 File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 252
+    Info (12023): Found entity 9: DECODIFICADOR_2 File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 270
+Info (12127): Elaborating entity "Cronometro" for the top level hierarchy
+Info (12128): Elaborating entity "DIV_CLK" for hierarchy "DIV_CLK:CHIP1" File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 68
+Info (12128): Elaborating entity "COUNT_9" for hierarchy "COUNT_9:CHIP2" File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 70
+Warning (10492): VHDL Process Statement warning at Cronometro.vhd(154): signal "RESET" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 154
+Info (12128): Elaborating entity "DECODIFICADOR_9" for hierarchy "DECODIFICADOR_9:CHIP3" File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 71
+Info (12128): Elaborating entity "COUNT_5" for hierarchy "COUNT_5:CHIP4" File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 73
+Warning (10492): VHDL Process Statement warning at Cronometro.vhd(183): signal "RESET" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 183
+Info (12128): Elaborating entity "COUNT_2" for hierarchy "COUNT_2:CHIP12" File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 85
+Warning (10492): VHDL Process Statement warning at Cronometro.vhd(212): signal "RESET" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 212
+Info (12128): Elaborating entity "VERIFICADOR" for hierarchy "VERIFICADOR:CHIP14" File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 88
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "DISPLAY_5[5]" is stuck at GND File: C:/Users/Alunos/Documents/D/Projetos/quartus/Cronometro.vhd Line: 8
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 145 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 102 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4785 megabytes
+    Info: Processing ended: Fri Dec 19 15:47:58 2025
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:32
+>>>>>>> 8be6b77 (VHDL Relogio)
 
 

@@ -1,13 +1,25 @@
+<<<<<<< HEAD
 Analysis & Synthesis Status : Successful - Fri Dec 05 14:25:46 2025
+=======
+Analysis & Synthesis Status : Successful - Fri Dec 19 15:47:58 2025
+>>>>>>> 8be6b77 (VHDL Relogio)
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : DDD
 Top-level Entity Name : Cronometro
 Family : MAX 10
+<<<<<<< HEAD
 Total logic elements : 82
     Total combinational functions : 82
     Dedicated logic registers : 41
 Total registers : 41
 Total pins : 29
+=======
+Total logic elements : 101
+    Total combinational functions : 101
+    Dedicated logic registers : 49
+Total registers : 49
+Total pins : 43
+>>>>>>> 8be6b77 (VHDL Relogio)
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
